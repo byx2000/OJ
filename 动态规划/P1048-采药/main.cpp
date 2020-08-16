@@ -31,6 +31,20 @@ private:
 	
 	vector<vector<int>> cache;
 
+	bool cacheExist(int currentObjectIndex, int leftTime)
+	{
+		return cache[currentObjectIndex][leftTime] != -1;
+	}
+
+	int getCache(int currentObjectIndex, int leftTime)
+	{
+		return cache[currentObjectIndex][leftTime];
+	}
+
+	void setCache(int currentObjectIndex, int leftTime, int value)
+	{
+		cache[currentObjectIndex][leftTime] = value;
+	}
 
 	int dp(int currentObjectIndex, int leftTime)
 	{
@@ -44,9 +58,9 @@ private:
 			return 0;
 		}
 
-		if (cache[currentObjectIndex][leftTime] != -1)
+		if (cacheExist(currentObjectIndex, leftTime))
 		{
-			return cache[currentObjectIndex][leftTime];
+			return getCache(currentObjectIndex, leftTime);
 		}
 
 		const Object& currentObject = objects[currentObjectIndex];
@@ -56,7 +70,7 @@ private:
 			ret = max(ret, currentObject.value + dp(currentObjectIndex + 1, leftTime - currentObject.time));
 		}
 
-		cache[currentObjectIndex][leftTime] = ret;
+		setCache(currentObjectIndex, leftTime, ret);
 		return ret;
 	}
 };
