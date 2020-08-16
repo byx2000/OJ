@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "动态规划", "动态规划", "{1D61E898-8382-4813-9420-3FAA551AC4DB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P1048-采药", "P1048-采药\P1048-采药.vcxproj", "{F0A8DA8F-CB84-4151-BA29-2223E9503665}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P1048-采药", "动态规划\P1048-采药\P1048-采药.vcxproj", "{F0A8DA8F-CB84-4151-BA29-2223E9503665}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
