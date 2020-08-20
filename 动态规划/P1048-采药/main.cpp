@@ -2,93 +2,177 @@
 
 #include <iostream>
 #include <vector>
+#include <map>
 
 using namespace std;
 
-struct Object
-{
-	int time;
-	int value;
-};
-
-class Solver
+// 解法1：记忆化搜索
+class Solution1
 {
 public:
-	int solve(const vector<Object>& objects, int totalTime)
+	Solution1(const vector<int>& weights, const vector<int>& values, int space)
+		: weights(weights), values(values), space(space) {}
+
+	int solve()
 	{
-		this->objects = objects;
-
-		cache = vector<vector<int>>(MAX_OBJECT_COUNT, vector<int>(MAX_TOTAL_TIME, -1));
-
-		return dp(0, totalTime);
+		cache.clear();
+		return dp(weights.size() - 1, space);
 	}
 
 private:
-	const int MAX_TOTAL_TIME = 1005;
-	const int MAX_OBJECT_COUNT = 105;
+	vector<int> weights;
+	vector<int> values;
+	int space;
+	map<pair<int, int>, int> cache;
 
-	vector<Object> objects;
-	
-	vector<vector<int>> cache;
-
-	bool cacheExist(int currentObjectIndex, int leftTime)
+	int dp(int index, int leftSpace)
 	{
-		return cache[currentObjectIndex][leftTime] != -1;
-	}
+		pair<int, int> key(index, leftSpace);
 
-	int getCache(int currentObjectIndex, int leftTime)
-	{
-		return cache[currentObjectIndex][leftTime];
-	}
-
-	void setCache(int currentObjectIndex, int leftTime, int value)
-	{
-		cache[currentObjectIndex][leftTime] = value;
-	}
-
-	int dp(int currentObjectIndex, int leftTime)
-	{
-		if (leftTime < 0)
+		if (cache.count(key) > 0)
 		{
-			return 0;
+			return cache[key];
 		}
 
-		if (currentObjectIndex >= (int)objects.size())
+		if (leftSpace <= 0)
 		{
-			return 0;
+			return cache[key] = 0;
 		}
 
-		if (cacheExist(currentObjectIndex, leftTime))
+		if (index == 0)
 		{
-			return getCache(currentObjectIndex, leftTime);
+			if (leftSpace >= weights[0])
+			{
+				return cache[key] = values[0];
+			}
+			else
+			{
+				return cache[key] = 0;
+			}
 		}
 
-		const Object& currentObject = objects[currentObjectIndex];
-		int ret = dp(currentObjectIndex + 1, leftTime);
-		if (leftTime >= currentObject.time)
+		int ret = dp(index - 1, leftSpace);
+		if (leftSpace >= weights[index])
 		{
-			ret = max(ret, currentObject.value + dp(currentObjectIndex + 1, leftTime - currentObject.time));
+			ret = max(ret, dp(index - 1, leftSpace - weights[index]) + values[index]);
 		}
-
-		setCache(currentObjectIndex, leftTime, ret);
-		return ret;
+		
+		return cache[key] = ret;
 	}
 };
 
-int main()
+// 解法2：二维数组dp
+class Solution2
 {
-	int totalTime, objectCount;
-	cin >> totalTime >> objectCount;
+public:
+	Solution2(const vector<int>& weights, const vector<int>& values, int space)
+		: weights(weights), values(values), space(space) {}
 
-	vector<Object> objects;
-	for (int i = 0; i < objectCount; ++i)
+	int solve()
 	{
-		Object object;
-		cin >> object.time >> object.value;
-		objects.push_back(object);
+		vector<vector<int>> dp(weights.size(), vector<int>(space + 1, 0));
+
+		for (int s = 0; s <= space; ++s)
+		{
+			if (s >= weights[0])
+			{
+				dp[0][s] = values[0];
+			}
+			else
+			{
+				dp[0][s] = 0;
+			}
+		}
+
+		for (int i = 0; i < (int)weights.size(); ++i)
+		{
+			dp[i][0] = 0;
+		}
+
+		for (int i = 1; i < (int)weights.size(); ++i)
+		{
+			for (int s = 1; s <= space; ++s)
+			{
+				dp[i][s] = dp[i - 1][s];
+				if (s >= weights[i])
+				{
+					dp[i][s] = max(dp[i][s], dp[i - 1][s - weights[i]] + values[i]);
+				}
+			}
+		}
+
+		return dp[weights.size() - 1][space];
 	}
 
-	cout << Solver().solve(objects, totalTime);
+private:
+	vector<int> weights;
+	vector<int> values;
+	int space;
+};
+
+// 解法3：一维数组dp
+class Solution3
+{
+public:
+	Solution3(const vector<int>& weights, const vector<int>& values, int space)
+		: weights(weights), values(values), space(space) {}
+
+	int solve()
+	{
+		vector<int> dp(space + 1, 0);
+
+		for (int s = 0; s <= space; ++s)
+		{
+			if (s >= weights[0])
+			{
+				dp[s] = values[0];
+			}
+			else
+			{
+				dp[s] = 0;
+			}
+		}
+
+		for (int i = 1; i < (int)weights.size(); ++i)
+		{
+			for (int s = space; s >= 0; --s)
+			{
+				if (s >= weights[i])
+				{
+					dp[s] = max(dp[s], dp[s - weights[i]] + values[i]);
+				}
+			}
+		}
+
+		return dp[space];
+	}
+
+private:
+	vector<int> weights;
+	vector<int> values;
+	int space;
+};
+
+
+int main()
+{
+	int cnt, space;
+	cin >> space >> cnt;
+
+	vector<int> weights;
+	vector<int> values;
+
+	for (int i = 0; i < cnt; ++i)
+	{
+		int weight, value;
+		cin >> weight >> value;
+		weights.push_back(weight);
+		values.push_back(value);
+	}
+
+	//cout << Solution1(weights, values, space).solve();
+	//cout << Solution2(weights, values, space).solve();
+	cout << Solution3(weights, values, space).solve();
 
 	return 0;
 }
