@@ -63,24 +63,19 @@ public:
 	{
 		vector<vector<int>> dp(weights.size(), vector<int>(space + 1, 0));
 
-		for (int s = 0; s <= space; ++s)
+		for (int leftSpace = 0; leftSpace <= space; ++leftSpace)
 		{
-			dp[0][s] = s / weights[0] * values[0];
+			dp[0][leftSpace] = leftSpace / weights[0] * values[0];
 		}
 
-		for (int i = 0; i < (int)weights.size(); ++i)
+		for (int index = 1; index < (int)weights.size(); ++index)
 		{
-			dp[i][0] = 0;
-		}
-
-		for (int i = 1; i < (int)weights.size(); ++i)
-		{
-			for (int s = 1; s <= space; ++s)
+			for (int leftSpace = 0; leftSpace <= space; ++leftSpace)
 			{
-				dp[i][s] = dp[i - 1][s];
-				if (s >= weights[i])
+				dp[index][leftSpace] = dp[index - 1][leftSpace];
+				if (leftSpace >= weights[index])
 				{
-					dp[i][s] = max(dp[i][s], dp[i][s - weights[i]] + values[i]);
+					dp[index][leftSpace] = max(dp[index][leftSpace], dp[index][leftSpace - weights[index]] + values[index]);
 				}
 			}
 		}
@@ -105,18 +100,18 @@ public:
 	{
 		vector<int> dp(space + 1, 0);
 
-		for (int s = 0; s <= space; ++s)
+		for (int leftSpace = 0; leftSpace <= space; ++leftSpace)
 		{
-			dp[s] = s / weights[0] * values[0];
+			dp[leftSpace] = leftSpace / weights[0] * values[0];
 		}
 
-		for (int i = 1; i < (int)weights.size(); ++i)
+		for (int index = 1; index < (int)weights.size(); ++index)
 		{
-			for (int s = 0; s <= space; ++s)
+			for (int leftSpace = 0; leftSpace <= space; ++leftSpace)
 			{
-				if (s >= weights[i])
+				if (leftSpace >= weights[index])
 				{
-					dp[s] = max(dp[s], dp[s - weights[i]] + values[i]);
+					dp[leftSpace] = max(dp[leftSpace], dp[leftSpace - weights[index]] + values[index]);
 				}
 			}
 		}
