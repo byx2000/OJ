@@ -1,4 +1,4 @@
-// https://www.luogu.com.cn/problem/P1048
+// https://www.luogu.com.cn/problem/P1616
 
 #include <iostream>
 #include <vector>
@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// 解法1：记忆化搜索
+// 解法1：记忆化搜索（MLE、TLE）
 class Solution1
 {
 public:
@@ -15,7 +15,7 @@ public:
 
 	int solve()
 	{
-		cache.clear();
+		cache = vector<vector<int>>(weights.size(), vector<int>(space + 1, -1));
 		return dp(weights.size() - 1, space);
 	}
 
@@ -23,45 +23,36 @@ private:
 	vector<int> weights;
 	vector<int> values;
 	int space;
-	map<pair<int, int>, int> cache;
+	vector<vector<int>> cache;
 
 	int dp(int index, int leftSpace)
 	{
-		pair<int, int> key(index, leftSpace);
-
-		if (cache.count(key) > 0)
-		{
-			return cache[key];
-		}
-
 		if (leftSpace <= 0)
 		{
-			return cache[key] = 0;
+			return 0;
 		}
 
 		if (index == 0)
 		{
-			if (leftSpace >= weights[0])
-			{
-				return cache[key] = values[0];
-			}
-			else
-			{
-				return cache[key] = 0;
-			}
+			return leftSpace / weights[0] * values[0];
+		}
+
+		if (cache[index][leftSpace] != -1)
+		{
+			return cache[index][leftSpace];
 		}
 
 		int ret = dp(index - 1, leftSpace);
 		if (leftSpace >= weights[index])
 		{
-			ret = max(ret, dp(index - 1, leftSpace - weights[index]) + values[index]);
+			ret = max(ret, dp(index, leftSpace - weights[index]) + values[index]);
 		}
-		
-		return cache[key] = ret;
+
+		return cache[index][leftSpace] = ret;
 	}
 };
 
-// 解法2：二维数组dp
+// 解法2：二维数组dp（MLE）
 class Solution2
 {
 public:
@@ -74,14 +65,7 @@ public:
 
 		for (int s = 0; s <= space; ++s)
 		{
-			if (s >= weights[0])
-			{
-				dp[0][s] = values[0];
-			}
-			else
-			{
-				dp[0][s] = 0;
-			}
+			dp[0][s] = s / weights[0] * values[0];
 		}
 
 		for (int i = 0; i < (int)weights.size(); ++i)
@@ -96,7 +80,7 @@ public:
 				dp[i][s] = dp[i - 1][s];
 				if (s >= weights[i])
 				{
-					dp[i][s] = max(dp[i][s], dp[i - 1][s - weights[i]] + values[i]);
+					dp[i][s] = max(dp[i][s], dp[i][s - weights[i]] + values[i]);
 				}
 			}
 		}
@@ -110,7 +94,7 @@ private:
 	int space;
 };
 
-// 解法3：一维数组dp
+// 解法3：一维数组dp（AC）
 class Solution3
 {
 public:
@@ -123,19 +107,12 @@ public:
 
 		for (int s = 0; s <= space; ++s)
 		{
-			if (s >= weights[0])
-			{
-				dp[s] = values[0];
-			}
-			else
-			{
-				dp[s] = 0;
-			}
+			dp[s] = s / weights[0] * values[0];
 		}
 
 		for (int i = 1; i < (int)weights.size(); ++i)
 		{
-			for (int s = space; s >= 0; --s)
+			for (int s = 0; s <= space; ++s)
 			{
 				if (s >= weights[i])
 				{

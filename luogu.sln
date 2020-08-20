@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "动态规划", "动态规�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P1048-采药", "动态规划\P1048-采药\P1048-采药.vcxproj", "{F0A8DA8F-CB84-4151-BA29-2223E9503665}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P1616-疯狂的采药", "动态规划\P1616-疯狂的采药\P1616-疯狂的采药.vcxproj", "{70E72992-4F61-4208-93D3-AC5C8E61A63F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,12 +25,21 @@ Global
 		{F0A8DA8F-CB84-4151-BA29-2223E9503665}.Release|x64.Build.0 = Release|x64
 		{F0A8DA8F-CB84-4151-BA29-2223E9503665}.Release|x86.ActiveCfg = Release|Win32
 		{F0A8DA8F-CB84-4151-BA29-2223E9503665}.Release|x86.Build.0 = Release|Win32
+		{70E72992-4F61-4208-93D3-AC5C8E61A63F}.Debug|x64.ActiveCfg = Debug|x64
+		{70E72992-4F61-4208-93D3-AC5C8E61A63F}.Debug|x64.Build.0 = Debug|x64
+		{70E72992-4F61-4208-93D3-AC5C8E61A63F}.Debug|x86.ActiveCfg = Debug|Win32
+		{70E72992-4F61-4208-93D3-AC5C8E61A63F}.Debug|x86.Build.0 = Debug|Win32
+		{70E72992-4F61-4208-93D3-AC5C8E61A63F}.Release|x64.ActiveCfg = Release|x64
+		{70E72992-4F61-4208-93D3-AC5C8E61A63F}.Release|x64.Build.0 = Release|x64
+		{70E72992-4F61-4208-93D3-AC5C8E61A63F}.Release|x86.ActiveCfg = Release|Win32
+		{70E72992-4F61-4208-93D3-AC5C8E61A63F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F0A8DA8F-CB84-4151-BA29-2223E9503665} = {1D61E898-8382-4813-9420-3FAA551AC4DB}
+		{70E72992-4F61-4208-93D3-AC5C8E61A63F} = {1D61E898-8382-4813-9420-3FAA551AC4DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
