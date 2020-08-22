@@ -27,11 +27,7 @@ public:
 	{
 		int cNode = edges.size();
 
-		vector<int> shortest(cNode);
-		for (int i = 0; i < cNode; ++i)
-		{
-			shortest[i] = INF;
-		}
+		vector<int> shortest(cNode, INF);
 
 		queue<Node> q;
 		q.push(Node(start, 0));
@@ -55,10 +51,7 @@ public:
 			{
 				int to = edges[iNode][i].to;
 				int dis = edges[iNode][i].distance;
-				if (distance + dis < shortest[to])
-				{
-					q.push(Node(to, distance + dis));
-				}
+				q.push(Node(to, distance + dis));
 			}
 		}
 
@@ -89,11 +82,7 @@ public:
 	{
 		int cNode = edges.size();
 
-		vector<int> shortest(cNode);
-		for (int i = 0; i < cNode; ++i)
-		{
-			shortest[i] = INF;
-		}
+		vector<int> shortest(cNode, INF);
 
 		priority_queue<Node, vector<Node>, greater<Node>> pq;
 		pq.push(Node(start, 0));
@@ -117,10 +106,64 @@ public:
 			{
 				int to = edges[iNode][i].to;
 				int dis = edges[iNode][i].distance;
-				if (distance + dis < shortest[to])
-				{
-					pq.push(Node(to, distance + dis));
-				}
+				pq.push(Node(to, distance + dis));
+			}
+		}
+
+		return shortest;
+	}
+
+private:
+	vector<vector<Edge>> edges;
+	int start;
+
+	struct Node
+	{
+		int iNode;
+		int distance;
+		Node(int iNode, int dis) : iNode(iNode), distance(dis) {}
+		bool operator>(const Node& n) const { return distance > n.distance; }
+	};
+};
+
+// 解法3：分支限界法（优先队列、标记已访问节点）
+class Solution3
+{
+public:
+	Solution3(const vector<vector<Edge>>& edges, int start)
+		: edges(edges), start(start) {}
+
+	vector<int> solve()
+	{
+		int cNode = edges.size();
+
+		vector<int> shortest(cNode, INF);
+		vector<bool> visited(cNode, false);
+
+		priority_queue<Node, vector<Node>, greater<Node>> pq;
+		pq.push(Node(start, 0));
+
+		while (!pq.empty())
+		{
+			Node node = pq.top();
+			int iNode = node.iNode;
+			int distance = node.distance;
+
+			pq.pop();
+
+			if (visited[iNode])
+			{
+				continue;
+			}
+			visited[iNode] = true;
+
+			shortest[iNode] = distance;
+
+			for (int i = 0; i < (int)edges[iNode].size(); ++i)
+			{
+				int to = edges[iNode][i].to;
+				int dis = edges[iNode][i].distance;
+				pq.push(Node(to, distance + dis));
 			}
 		}
 
@@ -154,7 +197,8 @@ int main()
 	}
 
 	//vector<int> res = Solution1(edges, start - 1).solve();
-	vector<int> res = Solution2(edges, start - 1).solve();
+	//vector<int> res = Solution2(edges, start - 1).solve();
+	vector<int> res = Solution3(edges, start - 1).solve();
 
 	for (int i = 0; i < cNode; ++i)
 	{
