@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P1164-小A点菜", "P1164-�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P3371-单源最短路径", "P3371-单源最短路径\P3371-单源最短路径.vcxproj", "{7F99B6A9-314F-44F5-9368-3C72D7B1C268}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibreOJ-单源最短路", "LibreOJ-单源最短路\LibreOJ-单源最短路.vcxproj", "{E6C21846-E618-4EB2-8756-2A98C05FA3FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{7F99B6A9-314F-44F5-9368-3C72D7B1C268}.Release|x64.Build.0 = Release|x64
 		{7F99B6A9-314F-44F5-9368-3C72D7B1C268}.Release|x86.ActiveCfg = Release|Win32
 		{7F99B6A9-314F-44F5-9368-3C72D7B1C268}.Release|x86.Build.0 = Release|Win32
+		{E6C21846-E618-4EB2-8756-2A98C05FA3FE}.Debug|x64.ActiveCfg = Debug|x64
+		{E6C21846-E618-4EB2-8756-2A98C05FA3FE}.Debug|x64.Build.0 = Debug|x64
+		{E6C21846-E618-4EB2-8756-2A98C05FA3FE}.Debug|x86.ActiveCfg = Debug|Win32
+		{E6C21846-E618-4EB2-8756-2A98C05FA3FE}.Debug|x86.Build.0 = Debug|Win32
+		{E6C21846-E618-4EB2-8756-2A98C05FA3FE}.Release|x64.ActiveCfg = Release|x64
+		{E6C21846-E618-4EB2-8756-2A98C05FA3FE}.Release|x64.Build.0 = Release|x64
+		{E6C21846-E618-4EB2-8756-2A98C05FA3FE}.Release|x86.ActiveCfg = Release|Win32
+		{E6C21846-E618-4EB2-8756-2A98C05FA3FE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
