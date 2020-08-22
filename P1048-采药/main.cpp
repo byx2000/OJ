@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <queue>
 
 using namespace std;
 
@@ -148,25 +149,85 @@ private:
 	int space;
 };
 
-int main()
+// 解法4：分支限界法
+class Solution4
 {
-	int cnt, space;
-	cin >> space >> cnt;
+public:
+	Solution4(const vector<int>& weights, const vector<int>& values, int space)
+		: weights(weights), values(values), space(space) {}
 
+	int solve()
+	{
+		// 计算最大单价
+		double maxPrice = -1;
+		for (int i = 0; i < (int)weights.size(); ++i)
+		{
+			maxPrice = max(maxPrice, (double)values[i] / weights[i]);
+		}
+
+		priority_queue<State> pq;
+		pq.push(State(0, space, 0, space * maxPrice));
+
+		while (!pq.empty())
+		{
+			State state = pq.top();
+			pq.pop();
+			int index = state.index;
+			int leftSpace = state.leftSpace;
+			int value = state.value;
+
+			cout << index << " " << leftSpace << " " << value << " " << state.upperBound << endl;
+
+			if (index == weights.size())
+			{
+				return value;
+			}
+
+			pq.push(State(index + 1, leftSpace, value, leftSpace * maxPrice));
+
+			if (leftSpace >= weights[index])
+			{
+				pq.push(State(index + 1, leftSpace - weights[index], value + values[index], (leftSpace - weights[index]) * maxPrice));
+			}
+		}
+
+		return 0;
+	}
+
+private:
 	vector<int> weights;
 	vector<int> values;
+	int space;
 
-	for (int i = 0; i < cnt; ++i)
+	struct State
 	{
-		int weight, value;
-		cin >> weight >> value;
-		weights.push_back(weight);
-		values.push_back(value);
+		int index;
+		int leftSpace;
+		int value;
+		double upperBound;
+		State(int index, int leftSpace, int value, double upperBound)
+			: index(index), leftSpace(leftSpace), value(value), upperBound(upperBound) {}
+		bool operator<(const State& s) const { return upperBound < s.upperBound; }
+	};
+};
+
+int main()
+{
+	int count, space;
+	cin >> space >> count;
+
+	vector<int> weights(count);
+	vector<int> values(count);
+
+	for (int i = 0; i < count; ++i)
+	{
+		cin >> weights[i] >> values[i];
 	}
 
 	//cout << Solution1(weights, values, space).solve();
 	//cout << Solution2(weights, values, space).solve();
-	cout << Solution3(weights, values, space).solve();
+	//cout << Solution3(weights, values, space).solve();
+	cout << Solution4(weights, values, space).solve();
 
 	return 0;
 }
