@@ -1,4 +1,7 @@
 # OJ刷题记录
-LeetCode：[https://leetcode-cn.com/problemset/all/](https://leetcode-cn.com/problemset/all/)
-洛谷：[https://www.luogu.com.cn/](https://www.luogu.com.cn/)
-LibreOJ：[https://loj.ac/problems](https://loj.ac/problems)
+| OJ       | 地址                                                   |
+| -------- | ------------------------------------------------------ |
+| LeetCode | [https://leetcode-cn.com/](https://leetcode-cn.com/)   |
+| 洛谷     | [https://www.luogu.com.cn/](https://www.luogu.com.cn/) |
+| LibreOJ  | [https://loj.ac/](https://loj.ac/)                     |
+
