@@ -4,6 +4,8 @@
 #include <vector>
 #include <map>
 #include <queue>
+#include <algorithm>
+#include <set>
 
 using namespace std;
 
@@ -149,7 +151,7 @@ private:
 	int space;
 };
 
-// 解法4：分支限界法
+// 解法4：分支限界法（较差上界）
 class Solution4
 {
 public:
@@ -158,36 +160,51 @@ public:
 
 	int solve()
 	{
+		int count = weights.size();
+
 		// 计算最大单价
-		double maxPrice = -1;
-		for (int i = 0; i < (int)weights.size(); ++i)
+		vector<double> maxPrice(count);
+		maxPrice[weights.size() - 1] = (double)values.back() / weights.back();
+		for (int i = (int)weights.size() - 2; i >= 0; --i)
 		{
-			maxPrice = max(maxPrice, (double)values[i] / weights[i]);
+			maxPrice[i] = max(maxPrice[i + 1], (double)values[i] / weights[i]);
 		}
 
 		priority_queue<State> pq;
-		pq.push(State(0, space, 0, space * maxPrice));
+		pq.push(State(0, 0, space, maxPrice));
+
+		set<pair<int, int>> visited;
 
 		while (!pq.empty())
 		{
 			State state = pq.top();
 			pq.pop();
-			int index = state.index;
-			int leftSpace = state.leftSpace;
-			int value = state.value;
+			int currentIndex = state.index;
+			int currentValue = state.value;
+			int currentLeftSpace = state.leftSpace;
 
-			cout << index << " " << leftSpace << " " << value << " " << state.upperBound << endl;
-
-			if (index == weights.size())
+			// 禁止重复扩展节点
+			pair<int, int> key(currentIndex, currentValue);
+			if (visited.count(key) > 0)
 			{
-				return value;
+				continue;
+			}
+			visited.insert(key);
+
+			if (currentIndex == weights.size())
+			{
+				return currentValue;
 			}
 
-			pq.push(State(index + 1, leftSpace, value, leftSpace * maxPrice));
 
-			if (leftSpace >= weights[index])
+			pq.push(State(currentIndex + 1, currentValue, currentLeftSpace, maxPrice));
+
+			if (currentLeftSpace >= weights[currentIndex])
 			{
-				pq.push(State(index + 1, leftSpace - weights[index], value + values[index], (leftSpace - weights[index]) * maxPrice));
+				int newIndex = currentIndex + 1;
+				int newLeftSpace = currentLeftSpace - weights[currentIndex];
+				int newValue = currentValue + values[currentIndex];
+				pq.push(State(newIndex, newValue, newLeftSpace, maxPrice));
 			}
 		}
 
@@ -202,11 +219,120 @@ private:
 	struct State
 	{
 		int index;
-		int leftSpace;
 		int value;
+		int leftSpace;
 		double upperBound;
-		State(int index, int leftSpace, int value, double upperBound)
-			: index(index), leftSpace(leftSpace), value(value), upperBound(upperBound) {}
+		State(int index, int value, int leftSpace, const vector<double>& maxPrice)
+			: index(index), value(value), leftSpace(leftSpace)
+		{
+			// 计算上界
+			if (index >= (int)maxPrice.size())
+			{
+				upperBound = value;
+			}
+			else
+			{
+				upperBound = value + leftSpace * maxPrice[index];
+			}
+		}
+		bool operator<(const State& s) const { return upperBound < s.upperBound; }
+	};
+};
+
+// 解法5：分支限界法（较好上界）
+class Solution5
+{
+public:
+	Solution5(const vector<int>& weights, const vector<int>& values, int space)
+		: weights(weights), values(values), space(space) {}
+
+	int solve()
+	{
+		int count = weights.size();
+
+		vector<Object> objects;
+		for (int i = 0; i < count; ++i)
+		{
+			objects.push_back(Object(weights[i], values[i]));
+		}
+
+		// 排序
+		sort(objects.begin(), objects.end());
+
+		priority_queue<State> pq;
+		pq.push(State(0, 0, space, objects));
+
+		set<pair<int, int>> visited;
+
+		while (!pq.empty())
+		{
+			State state = pq.top();
+			pq.pop();
+			int currentIndex = state.index;
+			int currentValue = state.value;
+			int currentLeftSpace = state.leftSpace;
+
+			// 禁止重复扩展节点
+			pair<int, int> key(currentIndex, currentValue);
+			if (visited.count(key) > 0)
+			{
+				continue;
+			}
+			visited.insert(key);
+
+			if (currentIndex == weights.size())
+			{
+				return currentValue;
+			}
+
+
+			pq.push(State(currentIndex + 1, currentValue, currentLeftSpace, objects));
+
+			if (currentLeftSpace >= objects[currentIndex].weight)
+			{
+				int newIndex = currentIndex + 1;
+				int newLeftSpace = currentLeftSpace - objects[currentIndex].weight;
+				int newValue = currentValue + objects[currentIndex].value;
+				pq.push(State(newIndex, newValue, newLeftSpace, objects));
+			}
+		}
+
+		return 0;
+	}
+
+private:
+	vector<int> weights;
+	vector<int> values;
+	int space;
+
+	struct Object
+	{
+		int weight;
+		int value;
+		double price;
+		Object(int weight, int value) : weight(weight), value(value), price((double)value / weight) {}
+		bool operator<(const Object& o) const { return price > o.price; }
+	};
+
+	struct State
+	{
+		int index;
+		int value;
+		int leftSpace;
+		double upperBound;
+		State(int index, int value, int leftSpace, const vector<Object>& objects)
+			: index(index), value(value), leftSpace(leftSpace)
+		{
+			// 计算上界
+			if (index >= (int)objects.size())
+			{
+				upperBound = value;
+			}
+			else
+			{
+				upperBound = value + leftSpace * objects[index].price;
+			}
+		}
 		bool operator<(const State& s) const { return upperBound < s.upperBound; }
 	};
 };
@@ -227,7 +353,8 @@ int main()
 	//cout << Solution1(weights, values, space).solve();
 	//cout << Solution2(weights, values, space).solve();
 	//cout << Solution3(weights, values, space).solve();
-	cout << Solution4(weights, values, space).solve();
+	//cout << Solution4(weights, values, space).solve();
+	cout << Solution5(weights, values, space).solve();
 
 	return 0;
 }
