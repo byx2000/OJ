@@ -63,6 +63,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "合并果子", "洛谷\合�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最小的k个数", "LeetCode\最小的k个数\最小的k个数.vcxproj", "{B876F081-E442-4262-ADF9-451313D25ECB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "组合", "LeetCode\组合\组合.vcxproj", "{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -279,6 +281,14 @@ Global
 		{B876F081-E442-4262-ADF9-451313D25ECB}.Release|x64.Build.0 = Release|x64
 		{B876F081-E442-4262-ADF9-451313D25ECB}.Release|x86.ActiveCfg = Release|Win32
 		{B876F081-E442-4262-ADF9-451313D25ECB}.Release|x86.Build.0 = Release|Win32
+		{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE}.Debug|x64.ActiveCfg = Debug|x64
+		{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE}.Debug|x64.Build.0 = Debug|x64
+		{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE}.Debug|x86.ActiveCfg = Debug|Win32
+		{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE}.Debug|x86.Build.0 = Debug|Win32
+		{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE}.Release|x64.ActiveCfg = Release|x64
+		{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE}.Release|x64.Build.0 = Release|x64
+		{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE}.Release|x86.ActiveCfg = Release|Win32
+		{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -310,6 +320,7 @@ Global
 		{EEF3D5C5-1C65-4DD4-AB94-BC2C60E8B4A6} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{AC6B1600-FC3A-42C2-8BED-40AD5B767798} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{B876F081-E442-4262-ADF9-451313D25ECB} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
