@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "石子合并", "洛谷\石�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "戳气球", "LeetCode\戳气球\戳气球.vcxproj", "{DD5441C6-DE12-45E2-888B-AB1B7EE42986}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "能量项链", "洛谷\能量项链\能量项链.vcxproj", "{7CD0655B-260D-4EC6-B158-058FF028B91C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -229,6 +231,14 @@ Global
 		{DD5441C6-DE12-45E2-888B-AB1B7EE42986}.Release|x64.Build.0 = Release|x64
 		{DD5441C6-DE12-45E2-888B-AB1B7EE42986}.Release|x86.ActiveCfg = Release|Win32
 		{DD5441C6-DE12-45E2-888B-AB1B7EE42986}.Release|x86.Build.0 = Release|Win32
+		{7CD0655B-260D-4EC6-B158-058FF028B91C}.Debug|x64.ActiveCfg = Debug|x64
+		{7CD0655B-260D-4EC6-B158-058FF028B91C}.Debug|x64.Build.0 = Debug|x64
+		{7CD0655B-260D-4EC6-B158-058FF028B91C}.Debug|x86.ActiveCfg = Debug|Win32
+		{7CD0655B-260D-4EC6-B158-058FF028B91C}.Debug|x86.Build.0 = Debug|Win32
+		{7CD0655B-260D-4EC6-B158-058FF028B91C}.Release|x64.ActiveCfg = Release|x64
+		{7CD0655B-260D-4EC6-B158-058FF028B91C}.Release|x64.Build.0 = Release|x64
+		{7CD0655B-260D-4EC6-B158-058FF028B91C}.Release|x86.ActiveCfg = Release|Win32
+		{7CD0655B-260D-4EC6-B158-058FF028B91C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -255,6 +265,7 @@ Global
 		{9D5D5DC6-FC90-4A84-9D7B-88887A988DC7} = {E45E1D3D-2FCC-49FF-9BA1-A39A8F4B88D1}
 		{CC89B8A6-93E2-4279-89C6-6980FC8DE128} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{DD5441C6-DE12-45E2-888B-AB1B7EE42986} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{7CD0655B-260D-4EC6-B158-058FF028B91C} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
