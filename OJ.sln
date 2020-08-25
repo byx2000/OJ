@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "组合", "LeetCode\组合\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "滑雪", "洛谷\滑雪\滑雪.vcxproj", "{8A8B887C-4D13-44C4-A1D1-80BA0421B384}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最大正方形", "洛谷\最大正方形\最大正方形.vcxproj", "{8B47B88D-FD87-47FD-88BF-8B813DF5B433}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -299,6 +301,14 @@ Global
 		{8A8B887C-4D13-44C4-A1D1-80BA0421B384}.Release|x64.Build.0 = Release|x64
 		{8A8B887C-4D13-44C4-A1D1-80BA0421B384}.Release|x86.ActiveCfg = Release|Win32
 		{8A8B887C-4D13-44C4-A1D1-80BA0421B384}.Release|x86.Build.0 = Release|Win32
+		{8B47B88D-FD87-47FD-88BF-8B813DF5B433}.Debug|x64.ActiveCfg = Debug|x64
+		{8B47B88D-FD87-47FD-88BF-8B813DF5B433}.Debug|x64.Build.0 = Debug|x64
+		{8B47B88D-FD87-47FD-88BF-8B813DF5B433}.Debug|x86.ActiveCfg = Debug|Win32
+		{8B47B88D-FD87-47FD-88BF-8B813DF5B433}.Debug|x86.Build.0 = Debug|Win32
+		{8B47B88D-FD87-47FD-88BF-8B813DF5B433}.Release|x64.ActiveCfg = Release|x64
+		{8B47B88D-FD87-47FD-88BF-8B813DF5B433}.Release|x64.Build.0 = Release|x64
+		{8B47B88D-FD87-47FD-88BF-8B813DF5B433}.Release|x86.ActiveCfg = Release|Win32
+		{8B47B88D-FD87-47FD-88BF-8B813DF5B433}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -332,6 +342,7 @@ Global
 		{B876F081-E442-4262-ADF9-451313D25ECB} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{B2EED824-BBC1-4747-B7AD-7A1ABB9B8ACE} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{8A8B887C-4D13-44C4-A1D1-80BA0421B384} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
+		{8B47B88D-FD87-47FD-88BF-8B813DF5B433} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
