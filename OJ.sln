@@ -75,6 +75,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "方格取数", "洛谷\方�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "编辑距离", "洛谷\编辑距离\编辑距离.vcxproj", "{44E2FDA9-82AF-4B34-957C-1AF99A632AB4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "宝物筛选", "洛谷\宝物筛选\宝物筛选.vcxproj", "{66E66777-4A6A-447C-BF79-2D963FABF5B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -339,6 +341,14 @@ Global
 		{44E2FDA9-82AF-4B34-957C-1AF99A632AB4}.Release|x64.Build.0 = Release|x64
 		{44E2FDA9-82AF-4B34-957C-1AF99A632AB4}.Release|x86.ActiveCfg = Release|Win32
 		{44E2FDA9-82AF-4B34-957C-1AF99A632AB4}.Release|x86.Build.0 = Release|Win32
+		{66E66777-4A6A-447C-BF79-2D963FABF5B7}.Debug|x64.ActiveCfg = Debug|x64
+		{66E66777-4A6A-447C-BF79-2D963FABF5B7}.Debug|x64.Build.0 = Debug|x64
+		{66E66777-4A6A-447C-BF79-2D963FABF5B7}.Debug|x86.ActiveCfg = Debug|Win32
+		{66E66777-4A6A-447C-BF79-2D963FABF5B7}.Debug|x86.Build.0 = Debug|Win32
+		{66E66777-4A6A-447C-BF79-2D963FABF5B7}.Release|x64.ActiveCfg = Release|x64
+		{66E66777-4A6A-447C-BF79-2D963FABF5B7}.Release|x64.Build.0 = Release|x64
+		{66E66777-4A6A-447C-BF79-2D963FABF5B7}.Release|x86.ActiveCfg = Release|Win32
+		{66E66777-4A6A-447C-BF79-2D963FABF5B7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -376,6 +386,7 @@ Global
 		{054721FC-FEC7-4F1D-9E51-1514618AFD3E} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{D3E81D33-2566-4E31-AF5B-DAFF2183FE13} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{44E2FDA9-82AF-4B34-957C-1AF99A632AB4} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
+		{66E66777-4A6A-447C-BF79-2D963FABF5B7} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
