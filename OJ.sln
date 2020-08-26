@@ -79,6 +79,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "宝物筛选", "洛谷\宝�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "没有上司的舞会", "洛谷\没有上司的舞会\没有上司的舞会.vcxproj", "{ED089733-FAA8-4FDF-98D1-598BD51E8773}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "选课", "洛谷\选课\选课.vcxproj", "{2E29C809-7F6E-4DB7-9EAB-5EEEA867ABE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -359,6 +361,14 @@ Global
 		{ED089733-FAA8-4FDF-98D1-598BD51E8773}.Release|x64.Build.0 = Release|x64
 		{ED089733-FAA8-4FDF-98D1-598BD51E8773}.Release|x86.ActiveCfg = Release|Win32
 		{ED089733-FAA8-4FDF-98D1-598BD51E8773}.Release|x86.Build.0 = Release|Win32
+		{2E29C809-7F6E-4DB7-9EAB-5EEEA867ABE4}.Debug|x64.ActiveCfg = Debug|x64
+		{2E29C809-7F6E-4DB7-9EAB-5EEEA867ABE4}.Debug|x64.Build.0 = Debug|x64
+		{2E29C809-7F6E-4DB7-9EAB-5EEEA867ABE4}.Debug|x86.ActiveCfg = Debug|Win32
+		{2E29C809-7F6E-4DB7-9EAB-5EEEA867ABE4}.Debug|x86.Build.0 = Debug|Win32
+		{2E29C809-7F6E-4DB7-9EAB-5EEEA867ABE4}.Release|x64.ActiveCfg = Release|x64
+		{2E29C809-7F6E-4DB7-9EAB-5EEEA867ABE4}.Release|x64.Build.0 = Release|x64
+		{2E29C809-7F6E-4DB7-9EAB-5EEEA867ABE4}.Release|x86.ActiveCfg = Release|Win32
+		{2E29C809-7F6E-4DB7-9EAB-5EEEA867ABE4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -398,6 +408,7 @@ Global
 		{44E2FDA9-82AF-4B34-957C-1AF99A632AB4} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{66E66777-4A6A-447C-BF79-2D963FABF5B7} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{ED089733-FAA8-4FDF-98D1-598BD51E8773} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
+		{2E29C809-7F6E-4DB7-9EAB-5EEEA867ABE4} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
