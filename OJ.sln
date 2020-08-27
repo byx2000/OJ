@@ -87,6 +87,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "相似基因", "洛谷\相�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "机器分配", "洛谷\机器分配\机器分配.vcxproj", "{6A0C9DC9-6FA0-4B39-AB8C-588314A80799}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "排队接水", "洛谷\排队接水\排队接水.vcxproj", "{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -399,6 +401,14 @@ Global
 		{6A0C9DC9-6FA0-4B39-AB8C-588314A80799}.Release|x64.Build.0 = Release|x64
 		{6A0C9DC9-6FA0-4B39-AB8C-588314A80799}.Release|x86.ActiveCfg = Release|Win32
 		{6A0C9DC9-6FA0-4B39-AB8C-588314A80799}.Release|x86.Build.0 = Release|Win32
+		{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C}.Debug|x64.ActiveCfg = Debug|x64
+		{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C}.Debug|x64.Build.0 = Debug|x64
+		{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C}.Debug|x86.Build.0 = Debug|Win32
+		{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C}.Release|x64.ActiveCfg = Release|x64
+		{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C}.Release|x64.Build.0 = Release|x64
+		{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C}.Release|x86.ActiveCfg = Release|Win32
+		{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -442,6 +452,7 @@ Global
 		{F3A602DB-C836-4D20-9E46-585E73B60A38} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{A992ED6C-B135-4716-A1DB-CB15B01D3F2A} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{6A0C9DC9-6FA0-4B39-AB8C-588314A80799} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
+		{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
