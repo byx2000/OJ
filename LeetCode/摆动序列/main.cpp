@@ -45,6 +45,48 @@ private:
     vector<int> nums;
 };
 
+// ½â·¨2£ºO(n) dp
+class Solution2
+{
+public:
+    Solution2(const vector<int>& nums) : nums(nums) {}
+
+    int solve()
+    {
+        if (nums.size() == 0)
+        {
+            return 0;
+        }
+
+        vector<int> up(nums.size(), 1);
+        vector<int> down(nums.size(), 1);
+
+        for (int i = 1; i < (int)nums.size(); ++i)
+        {
+            if (nums[i] > nums[i - 1])
+            {
+                up[i] = down[i - 1] + 1;
+                down[i] = down[i - 1];
+            }
+            else if (nums[i] < nums[i - 1])
+            {
+                up[i] = up[i - 1];
+                down[i] = up[i - 1] + 1;
+            }
+            else
+            {
+                up[i] = up[i - 1];
+                down[i] = down[i - 1];
+            }
+        }
+
+        return max(up.back(), down.back());
+    }
+
+private:
+    vector<int> nums;
+};
+
 class Solution
 {
 public:
