@@ -93,6 +93,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "括号", "LeetCode\括号\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "摆动序列", "LeetCode\摆动序列\摆动序列.vcxproj", "{ACFD6D1B-F954-4962-B1F2-6FDDFD976F97}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数组中的逆序对", "LeetCode\数组中的逆序对\数组中的逆序对.vcxproj", "{866EF90D-A672-482E-A382-BE501D76CF33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -429,6 +431,14 @@ Global
 		{ACFD6D1B-F954-4962-B1F2-6FDDFD976F97}.Release|x64.Build.0 = Release|x64
 		{ACFD6D1B-F954-4962-B1F2-6FDDFD976F97}.Release|x86.ActiveCfg = Release|Win32
 		{ACFD6D1B-F954-4962-B1F2-6FDDFD976F97}.Release|x86.Build.0 = Release|Win32
+		{866EF90D-A672-482E-A382-BE501D76CF33}.Debug|x64.ActiveCfg = Debug|x64
+		{866EF90D-A672-482E-A382-BE501D76CF33}.Debug|x64.Build.0 = Debug|x64
+		{866EF90D-A672-482E-A382-BE501D76CF33}.Debug|x86.ActiveCfg = Debug|Win32
+		{866EF90D-A672-482E-A382-BE501D76CF33}.Debug|x86.Build.0 = Debug|Win32
+		{866EF90D-A672-482E-A382-BE501D76CF33}.Release|x64.ActiveCfg = Release|x64
+		{866EF90D-A672-482E-A382-BE501D76CF33}.Release|x64.Build.0 = Release|x64
+		{866EF90D-A672-482E-A382-BE501D76CF33}.Release|x86.ActiveCfg = Release|Win32
+		{866EF90D-A672-482E-A382-BE501D76CF33}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -475,6 +485,7 @@ Global
 		{0C81E9DA-2CC2-4B8A-B191-B0C0AC84195C} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{A13CC63F-B2B3-4E56-BE19-BD9BED164CE8} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{ACFD6D1B-F954-4962-B1F2-6FDDFD976F97} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{866EF90D-A672-482E-A382-BE501D76CF33} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
