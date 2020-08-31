@@ -60,7 +60,7 @@ private:
 
 		int s1 = nums[mid];
 		int m1 = s1;
-		for (int i = mid - 1; i >= 0; --i)
+		for (int i = mid - 1; i >= low; --i)
 		{
 			s1 += nums[i];
 			m1 = max(m1, s1);
