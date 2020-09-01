@@ -105,6 +105,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "二分查找", "LeetCode\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "多数元素", "LeetCode\多数元素\多数元素.vcxproj", "{54AAB472-02B8-483E-B0ED-F1A8EFBBDA31}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数的划分", "洛谷\数的划分\数的划分.vcxproj", "{803C5A9C-FA57-4175-9B74-5BB93C54E1C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -489,6 +491,14 @@ Global
 		{54AAB472-02B8-483E-B0ED-F1A8EFBBDA31}.Release|x64.Build.0 = Release|x64
 		{54AAB472-02B8-483E-B0ED-F1A8EFBBDA31}.Release|x86.ActiveCfg = Release|Win32
 		{54AAB472-02B8-483E-B0ED-F1A8EFBBDA31}.Release|x86.Build.0 = Release|Win32
+		{803C5A9C-FA57-4175-9B74-5BB93C54E1C9}.Debug|x64.ActiveCfg = Debug|x64
+		{803C5A9C-FA57-4175-9B74-5BB93C54E1C9}.Debug|x64.Build.0 = Debug|x64
+		{803C5A9C-FA57-4175-9B74-5BB93C54E1C9}.Debug|x86.ActiveCfg = Debug|Win32
+		{803C5A9C-FA57-4175-9B74-5BB93C54E1C9}.Debug|x86.Build.0 = Debug|Win32
+		{803C5A9C-FA57-4175-9B74-5BB93C54E1C9}.Release|x64.ActiveCfg = Release|x64
+		{803C5A9C-FA57-4175-9B74-5BB93C54E1C9}.Release|x64.Build.0 = Release|x64
+		{803C5A9C-FA57-4175-9B74-5BB93C54E1C9}.Release|x86.ActiveCfg = Release|Win32
+		{803C5A9C-FA57-4175-9B74-5BB93C54E1C9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -541,6 +551,7 @@ Global
 		{5971330B-4914-4494-AACA-8CCE59EE03F9} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{3011675D-9797-450D-8CCF-43B184D225C1} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{54AAB472-02B8-483E-B0ED-F1A8EFBBDA31} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{803C5A9C-FA57-4175-9B74-5BB93C54E1C9} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
