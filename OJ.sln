@@ -113,6 +113,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "放苹果", "洛谷\放苹�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "自然数的拆分问题", "洛谷\自然数的拆分问题\自然数的拆分问题.vcxproj", "{D4B9B7CA-A7CC-4F63-93CB-89825AF53B4E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "颜色分类", "LeetCode\颜色分类\颜色分类.vcxproj", "{FA82B439-1E4E-401B-AF17-4639372E984E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -529,6 +531,14 @@ Global
 		{D4B9B7CA-A7CC-4F63-93CB-89825AF53B4E}.Release|x64.Build.0 = Release|x64
 		{D4B9B7CA-A7CC-4F63-93CB-89825AF53B4E}.Release|x86.ActiveCfg = Release|Win32
 		{D4B9B7CA-A7CC-4F63-93CB-89825AF53B4E}.Release|x86.Build.0 = Release|Win32
+		{FA82B439-1E4E-401B-AF17-4639372E984E}.Debug|x64.ActiveCfg = Debug|x64
+		{FA82B439-1E4E-401B-AF17-4639372E984E}.Debug|x64.Build.0 = Debug|x64
+		{FA82B439-1E4E-401B-AF17-4639372E984E}.Debug|x86.ActiveCfg = Debug|Win32
+		{FA82B439-1E4E-401B-AF17-4639372E984E}.Debug|x86.Build.0 = Debug|Win32
+		{FA82B439-1E4E-401B-AF17-4639372E984E}.Release|x64.ActiveCfg = Release|x64
+		{FA82B439-1E4E-401B-AF17-4639372E984E}.Release|x64.Build.0 = Release|x64
+		{FA82B439-1E4E-401B-AF17-4639372E984E}.Release|x86.ActiveCfg = Release|Win32
+		{FA82B439-1E4E-401B-AF17-4639372E984E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -585,6 +595,7 @@ Global
 		{61FC0D4B-DDBC-4CED-B5F9-984D5AF4FBBC} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{1F92DD78-FD06-4A65-8952-D74D5DEF33BC} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{D4B9B7CA-A7CC-4F63-93CB-89825AF53B4E} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
+		{FA82B439-1E4E-401B-AF17-4639372E984E} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
