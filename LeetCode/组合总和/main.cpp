@@ -53,5 +53,22 @@ public:
 
 int main()
 {
+    vector<int> nums{ 2,3,6,7 };
+    vector<vector<int>> output
+    {
+        {7},
+        {2, 2, 3},
+    };
+    TEST(Assert::areEquivalent(Solution().combinationSum(nums, 7), output));
+
+    nums = vector<int>{ 2,3,5 };
+    output = vector<vector<int>>
+    {
+        {2, 2, 2, 2},
+        {2, 3, 3},
+        {3, 5},
+    };
+    TEST(Assert::areEquivalent(Solution().combinationSum(nums, 8), output));
+
 	return 0;
 }

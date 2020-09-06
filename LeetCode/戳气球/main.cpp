@@ -63,9 +63,10 @@ public:
 int main()
 {
     vector<int> input{ 3, 1, 5, 8 };
-    assert(Solution().maxCoins(input) == 167);
+    TEST(Assert::areEqual(Solution().maxCoins(input), 167));
+
     input = vector<int>{ 8, 2, 6, 8, 9, 8, 1, 4, 1, 5, 3, 0, 7, 7, 0, 4, 2, 2 };
-    assert(Solution().maxCoins(input) == 3446);
+    TEST(Assert::areEqual(Solution().maxCoins(input), 3446));
 
 	return 0;
 }

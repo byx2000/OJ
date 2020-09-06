@@ -59,5 +59,14 @@ public:
 
 int main()
 {
+    vector<int> nums{ 1, 1, 2 };
+    vector<vector<int>> output
+    {
+        {1, 1, 2},
+        {1, 2, 1},
+        {2, 1, 1},
+    };
+    TEST(Assert::areEquivalent(Solution().permuteUnique(nums), output));
+
 	return 0;
 }

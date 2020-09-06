@@ -50,7 +50,7 @@ public:
         {
             return false;
         }
-        return set<T>(begin(a), end(a)) == set<T>(begin(b), end(b));
+        return set<T::value_type>(begin(a), end(a)) == set<T::value_type>(begin(b), end(b));
     }
 
     // 判断集合是否相等

@@ -98,5 +98,15 @@ public:
 
 int main()
 {
+    vector<int> input{ 1, 7, 4, 9, 2, 5 };
+    TEST(Assert::areEqual(Solution().wiggleMaxLength(input), 6));
+
+    input = vector<int>{ 1, 17, 5, 10, 13, 15, 10, 5, 16, 8 };
+    TEST(Assert::areEqual(Solution().wiggleMaxLength(input), 7));
+
+    input = vector<int>{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    TEST(Assert::areEqual(Solution().wiggleMaxLength(input), 2));
+
+
 	return 0;
 }

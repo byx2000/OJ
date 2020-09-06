@@ -66,8 +66,8 @@ public:
 
 int main()
 {
-    assert(Solution().waysToChange(5) == 2);
-    assert(Solution().waysToChange(10) == 4);
+    TEST(Assert::areEqual(Solution().waysToChange(5), 2));
+    TEST(Assert::areEqual(Solution().waysToChange(10), 4));
 
 	return 0;
 }

@@ -72,9 +72,10 @@ public:
 int main()
 {
     vector<int> input{ 7, 5, 6, 4 };
-    assert(Solution().reversePairs(input) == 5);
+    TEST(Assert::areEqual(Solution().reversePairs(input), 5));
+
     input = vector<int>{ 1, 3, 2, 3, 1 };
-    assert(Solution().reversePairs(input) == 4);
+    TEST(Assert::areEqual(Solution().reversePairs(input), 4));
 
 	return 0;
 }

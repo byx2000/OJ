@@ -36,5 +36,9 @@ public:
 
 int main()
 {
+    vector<int> nums{ 2,0,2,1,1,0 };
+    Solution().sortColors(nums);
+    TEST(Assert::areEqual(nums, vector<int>{0, 0, 1, 1, 2, 2}));
+
 	return 0;
 }

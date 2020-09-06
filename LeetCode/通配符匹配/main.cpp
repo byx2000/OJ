@@ -75,11 +75,11 @@ public:
 
 int main()
 {
-    assert(!Solution().isMatch("aa", "a"));
-    assert(Solution().isMatch("aa", "*"));
-    assert(!Solution().isMatch("cb", "?a"));
-    assert(Solution().isMatch("adceb", "*a*b"));
-    assert(!Solution().isMatch("acdcb", "a*c?b"));
+    TEST(!Assert::isTrue(Solution().isMatch("aa", "a")));
+    TEST(Assert::isTrue(Solution().isMatch("aa", "*")));
+    TEST(!Assert::isTrue(Solution().isMatch("cb", "?a")));
+    TEST(Assert::isTrue(Solution().isMatch("adceb", "*a*b")));
+    TEST(!Assert::isTrue(Solution().isMatch("acdcb", "a*c?b")));
 
 	return 0;
 }

@@ -54,5 +54,8 @@ public:
 
 int main()
 {
+    vector<string> output{ "((()))", "(()())", "(())()", "()(())", "()()()" };
+    TEST(Assert::areEquivalent(Solution().generateParenthesis(3), output));
+
 	return 0;
 }

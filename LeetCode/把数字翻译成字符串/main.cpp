@@ -41,7 +41,7 @@ public:
 
 int main()
 {
-    assert(Solution().translateNum(12258) == 51);
+    TEST(Assert::areEqual(Solution().translateNum(12258), 5));
 
 	return 0;
 }

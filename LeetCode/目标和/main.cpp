@@ -42,7 +42,7 @@ public:
 int main()
 {
     vector<int> nums{ 1, 1, 1, 1, 1 };
-    assert(Solution().findTargetSumWays(nums, 3) == 5);
+    TEST(Assert::areEqual(Solution().findTargetSumWays(nums, 3), 5));
 
 	return 0;
 }

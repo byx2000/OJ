@@ -55,9 +55,10 @@ public:
 int main()
 {
     vector<int> v{ 1, 5, 11, 5 };
-    assert(Solution().canPartition(v));
+    TEST(Assert::isTrue(Solution().canPartition(v)));
+
     v = vector<int>{ 1, 2, 3, 5 };
-    assert(!Solution().canPartition(v));
+    TEST(!Assert::isTrue(Solution().canPartition(v)));
 
 	return 0;
 }

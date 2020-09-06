@@ -49,5 +49,11 @@ public:
 
 int main()
 {
+    vector<int> input{ 3,2,3 };
+    TEST(Assert::areEqual(Solution().majorityElement(input), 3));
+
+    input = vector<int>{ 2,2,1,1,1,2,2 };
+    TEST(Assert::areEqual(Solution().majorityElement(input), 2));
+
 	return 0;
 }

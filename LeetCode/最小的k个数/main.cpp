@@ -180,5 +180,11 @@ public:
 
 int main()
 {
+    vector<int> nums{ 3,2,1 };
+    TEST(Assert::areEquivalent(Solution().getLeastNumbers(nums, 2), vector<int>{1, 2}));
+
+    nums = vector<int>{ 0,1,2,1 };
+    TEST(Assert::areEquivalent(Solution().getLeastNumbers(nums, 1), vector<int>{0}));
+
 	return 0;
 }

@@ -69,5 +69,11 @@ public:
 
 int main()
 {
+    vector<int> nums{ -1,0,3,5,9,12 };
+    TEST(Assert::areEqual(Solution().search(nums, 9), 4));
+
+    nums = vector<int>{ -1,0,3,5,9,12 };
+    TEST(Assert::areEqual(Solution().search(nums, 2), -1));
+
 	return 0;
 }
