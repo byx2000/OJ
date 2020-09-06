@@ -131,6 +131,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "三步问题", "LeetCode\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "判断子序列", "LeetCode\判断子序列\判断子序列.vcxproj", "{32F20132-7EC8-4F57-BE31-A2A3AACBC6A2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "只有两个键的键盘", "LeetCode\只有两个键的键盘\只有两个键的键盘.vcxproj", "{F71DFDDB-7743-490A-8CD9-1ACC665BFFF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -619,6 +621,14 @@ Global
 		{32F20132-7EC8-4F57-BE31-A2A3AACBC6A2}.Release|x64.Build.0 = Release|x64
 		{32F20132-7EC8-4F57-BE31-A2A3AACBC6A2}.Release|x86.ActiveCfg = Release|Win32
 		{32F20132-7EC8-4F57-BE31-A2A3AACBC6A2}.Release|x86.Build.0 = Release|Win32
+		{F71DFDDB-7743-490A-8CD9-1ACC665BFFF4}.Debug|x64.ActiveCfg = Debug|x64
+		{F71DFDDB-7743-490A-8CD9-1ACC665BFFF4}.Debug|x64.Build.0 = Debug|x64
+		{F71DFDDB-7743-490A-8CD9-1ACC665BFFF4}.Debug|x86.ActiveCfg = Debug|Win32
+		{F71DFDDB-7743-490A-8CD9-1ACC665BFFF4}.Debug|x86.Build.0 = Debug|Win32
+		{F71DFDDB-7743-490A-8CD9-1ACC665BFFF4}.Release|x64.ActiveCfg = Release|x64
+		{F71DFDDB-7743-490A-8CD9-1ACC665BFFF4}.Release|x64.Build.0 = Release|x64
+		{F71DFDDB-7743-490A-8CD9-1ACC665BFFF4}.Release|x86.ActiveCfg = Release|Win32
+		{F71DFDDB-7743-490A-8CD9-1ACC665BFFF4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -684,6 +694,7 @@ Global
 		{05368675-FAD0-4B98-B84E-1772CEF998EC} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{85273107-E800-4E82-BA18-E475FADA80F7} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{32F20132-7EC8-4F57-BE31-A2A3AACBC6A2} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{F71DFDDB-7743-490A-8CD9-1ACC665BFFF4} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
