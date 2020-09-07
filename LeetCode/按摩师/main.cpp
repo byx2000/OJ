@@ -15,7 +15,7 @@ public:
         {
             return nums[0];
         }
-        else if (nums.size() == 1)
+        else if (nums.size() == 2)
         {
             return max(nums[0], nums[1]);
         }
