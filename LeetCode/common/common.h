@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <algorithm>
+#include <numeric>
 #include <string>
 #include <vector>
 #include <map>
