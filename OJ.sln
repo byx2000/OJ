@@ -141,6 +141,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "打家劫舍II", "LeetCode\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最后一块石头的重量II", "LeetCode\最后一块石头的重量II\最后一块石头的重量II.vcxproj", "{B4550708-9061-4C4D-B909-AF6651D797A3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最长重复子数组", "LeetCode\最长重复子数组\最长重复子数组.vcxproj", "{AD556830-D389-4E92-8AEF-AC3507044F19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -669,6 +671,14 @@ Global
 		{B4550708-9061-4C4D-B909-AF6651D797A3}.Release|x64.Build.0 = Release|x64
 		{B4550708-9061-4C4D-B909-AF6651D797A3}.Release|x86.ActiveCfg = Release|Win32
 		{B4550708-9061-4C4D-B909-AF6651D797A3}.Release|x86.Build.0 = Release|Win32
+		{AD556830-D389-4E92-8AEF-AC3507044F19}.Debug|x64.ActiveCfg = Debug|x64
+		{AD556830-D389-4E92-8AEF-AC3507044F19}.Debug|x64.Build.0 = Debug|x64
+		{AD556830-D389-4E92-8AEF-AC3507044F19}.Debug|x86.ActiveCfg = Debug|Win32
+		{AD556830-D389-4E92-8AEF-AC3507044F19}.Debug|x86.Build.0 = Debug|Win32
+		{AD556830-D389-4E92-8AEF-AC3507044F19}.Release|x64.ActiveCfg = Release|x64
+		{AD556830-D389-4E92-8AEF-AC3507044F19}.Release|x64.Build.0 = Release|x64
+		{AD556830-D389-4E92-8AEF-AC3507044F19}.Release|x86.ActiveCfg = Release|Win32
+		{AD556830-D389-4E92-8AEF-AC3507044F19}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -739,6 +749,7 @@ Global
 		{69488349-9BE8-41D1-8201-D0DAF6ADEBD7} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{A0E6E2F4-B1BE-4F14-AA56-10DFED0605A5} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{B4550708-9061-4C4D-B909-AF6651D797A3} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{AD556830-D389-4E92-8AEF-AC3507044F19} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
