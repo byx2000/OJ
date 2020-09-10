@@ -2,31 +2,29 @@
 
 #include "../common/common.h"
 
-class Solution 
+// ¼ÇÒä»¯ËÑË÷
+class Solution1
 {
 public:
-    string longestPalindrome(string s) 
+    Solution1(const string& s) : s(s) {}
+
+    string solve()
     {
-        this->s = s;
         cache = vector<vector<bool>>(s.size(), vector<bool>(s.size(), false));
         book = vector<vector<bool>>(s.size(), vector<bool>(s.size(), false));
 
-        int l = 0, r = 0;
-        int maxLen = 0;
-        for (int i = 0; i < (int)s.size(); ++i)
+        for (int len = s.size(); len >= 1; --len)
         {
-            for (int j = i; j < (int)s.size(); ++j)
+            for (int start = 0; start + len <= (int)s.size(); ++start)
             {
-                if (dp(i, j) && j - i + 1 > maxLen)
+                if (dp(start, start + len - 1))
                 {
-                    l = i;
-                    r = j;
-                    maxLen = j - i + 1;
+                    return s.substr(start, len);
                 }
             }
         }
 
-        return s.substr(l, maxLen);
+        return "";
     }
 
 private:
@@ -59,6 +57,15 @@ private:
         {
             return cache[i][j] = dp(i + 1, j - 1);
         }
+    }
+};
+
+class Solution 
+{
+public:
+    string longestPalindrome(string s) 
+    {
+        return Solution1(s).solve();
     }
 };
 
