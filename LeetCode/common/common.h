@@ -41,6 +41,13 @@ public:
         return a == b;
     }
 
+    // 浮点数相等偏特化版本
+    template<>
+    static bool areEqual<double, double>(const double& a, const double& b)
+    {
+        return fabs(a - b) < 1e-6;
+    }
+
     // 判断集合是否相等
     // 适用于C++容器类：vector、string等
     // 集合相等意味着两集合所含元素相等，不考虑元素顺序
