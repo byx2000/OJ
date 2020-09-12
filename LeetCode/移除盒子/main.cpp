@@ -7,7 +7,7 @@ class Solution
 public:
     int removeBoxes(vector<int>& nums) 
     {
-
+        return 0;
     }
 };
 

@@ -159,6 +159,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "礼物的最大价值", "Le
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "移除盒子", "LeetCode\移除盒子\移除盒子.vcxproj", "{C3AA9AB9-2032-4579-9D46-E1B452DCE4FC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "分隔数组以得到最大和", "LeetCode\分隔数组以得到最大和\分隔数组以得到最大和.vcxproj", "{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -759,6 +761,14 @@ Global
 		{C3AA9AB9-2032-4579-9D46-E1B452DCE4FC}.Release|x64.Build.0 = Release|x64
 		{C3AA9AB9-2032-4579-9D46-E1B452DCE4FC}.Release|x86.ActiveCfg = Release|Win32
 		{C3AA9AB9-2032-4579-9D46-E1B452DCE4FC}.Release|x86.Build.0 = Release|Win32
+		{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5}.Debug|x64.ActiveCfg = Debug|x64
+		{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5}.Debug|x64.Build.0 = Debug|x64
+		{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5}.Debug|x86.ActiveCfg = Debug|Win32
+		{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5}.Debug|x86.Build.0 = Debug|Win32
+		{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5}.Release|x64.ActiveCfg = Release|x64
+		{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5}.Release|x64.Build.0 = Release|x64
+		{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5}.Release|x86.ActiveCfg = Release|Win32
+		{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -838,6 +848,7 @@ Global
 		{0BCA4258-E416-46C6-A59B-B1317D7E73C3} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{1CF79DE2-B9EF-4011-8C1E-3D9F317A89FE} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{C3AA9AB9-2032-4579-9D46-E1B452DCE4FC} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
