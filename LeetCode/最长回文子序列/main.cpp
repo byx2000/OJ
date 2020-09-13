@@ -74,17 +74,7 @@ public:
     int solve()
     {
         cache = vector<vector<int>>(s.size(), vector<int>(s.size(), -1));
-
-        int result = -1;
-        for (int i = 0; i < (int)s.size(); ++i)
-        {
-            for (int j = 0; j < (int)s.size(); ++j)
-            {
-                result = max(result, dp(i, j));
-            }
-        }
-
-        return result;
+        return dp(0, s.size() - 1);
     }
 
 private:
