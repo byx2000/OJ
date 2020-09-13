@@ -165,6 +165,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "两个字符串的删除操
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "两个字符串的最小ASCII删除和", "LeetCode\两个字符串的最小ASCII删除和\两个字符串的最小ASCII删除和.vcxproj", "{D47209B9-31D0-437D-B6A2-6C636526F3AA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "让字符串成为回文串的最少插入次数", "LeetCode\让字符串成为回文串的最少插入次数\让字符串成为回文串的最少插入次数.vcxproj", "{73EE5506-2D0C-4EDF-B8C7-1A2CF89DA310}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -789,6 +791,14 @@ Global
 		{D47209B9-31D0-437D-B6A2-6C636526F3AA}.Release|x64.Build.0 = Release|x64
 		{D47209B9-31D0-437D-B6A2-6C636526F3AA}.Release|x86.ActiveCfg = Release|Win32
 		{D47209B9-31D0-437D-B6A2-6C636526F3AA}.Release|x86.Build.0 = Release|Win32
+		{73EE5506-2D0C-4EDF-B8C7-1A2CF89DA310}.Debug|x64.ActiveCfg = Debug|x64
+		{73EE5506-2D0C-4EDF-B8C7-1A2CF89DA310}.Debug|x64.Build.0 = Debug|x64
+		{73EE5506-2D0C-4EDF-B8C7-1A2CF89DA310}.Debug|x86.ActiveCfg = Debug|Win32
+		{73EE5506-2D0C-4EDF-B8C7-1A2CF89DA310}.Debug|x86.Build.0 = Debug|Win32
+		{73EE5506-2D0C-4EDF-B8C7-1A2CF89DA310}.Release|x64.ActiveCfg = Release|x64
+		{73EE5506-2D0C-4EDF-B8C7-1A2CF89DA310}.Release|x64.Build.0 = Release|x64
+		{73EE5506-2D0C-4EDF-B8C7-1A2CF89DA310}.Release|x86.ActiveCfg = Release|Win32
+		{73EE5506-2D0C-4EDF-B8C7-1A2CF89DA310}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -871,6 +881,7 @@ Global
 		{F48C6E55-044E-4AA1-9E5B-E77E897D3BC5} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{D81FA189-E616-4C01-9347-CEA40A107CDB} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{D47209B9-31D0-437D-B6A2-6C636526F3AA} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{73EE5506-2D0C-4EDF-B8C7-1A2CF89DA310} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
