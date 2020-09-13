@@ -7,7 +7,7 @@ class Solution
 public:
     int minInsertions(string s) 
     {
-
+        return 0;
     }
 };
 
