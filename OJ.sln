@@ -183,6 +183,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最长递增子序列的个
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "和为目标值的最大数目不重叠非空子数组数目", "LeetCode\和为目标值的最大数目不重叠非空子数组数目\和为目标值的最大数目不重叠非空子数组数目.vcxproj", "{0AA17218-0533-4F4C-84D2-482EE0D801B7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "视频拼接", "LeetCode\视频拼接\视频拼接.vcxproj", "{F994F4EB-0112-49A8-B615-A5A4E79EE452}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -879,6 +881,14 @@ Global
 		{0AA17218-0533-4F4C-84D2-482EE0D801B7}.Release|x64.Build.0 = Release|x64
 		{0AA17218-0533-4F4C-84D2-482EE0D801B7}.Release|x86.ActiveCfg = Release|Win32
 		{0AA17218-0533-4F4C-84D2-482EE0D801B7}.Release|x86.Build.0 = Release|Win32
+		{F994F4EB-0112-49A8-B615-A5A4E79EE452}.Debug|x64.ActiveCfg = Debug|x64
+		{F994F4EB-0112-49A8-B615-A5A4E79EE452}.Debug|x64.Build.0 = Debug|x64
+		{F994F4EB-0112-49A8-B615-A5A4E79EE452}.Debug|x86.ActiveCfg = Debug|Win32
+		{F994F4EB-0112-49A8-B615-A5A4E79EE452}.Debug|x86.Build.0 = Debug|Win32
+		{F994F4EB-0112-49A8-B615-A5A4E79EE452}.Release|x64.ActiveCfg = Release|x64
+		{F994F4EB-0112-49A8-B615-A5A4E79EE452}.Release|x64.Build.0 = Release|x64
+		{F994F4EB-0112-49A8-B615-A5A4E79EE452}.Release|x86.ActiveCfg = Release|Win32
+		{F994F4EB-0112-49A8-B615-A5A4E79EE452}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -970,6 +980,7 @@ Global
 		{7CA0E51D-612D-447C-B17C-B6D7662BF6D4} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{2298FCB7-8DAE-4DFC-8EF7-505CA32D2E07} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{0AA17218-0533-4F4C-84D2-482EE0D801B7} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{F994F4EB-0112-49A8-B615-A5A4E79EE452} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
