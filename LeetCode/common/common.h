@@ -79,4 +79,20 @@ public:
 // 当条件condition为假时，程序退出，并打印出错行号
 #define TEST(condition) do{if(!(condition))assert(false);}while(0)
 
+// 二叉树节点
+struct TreeNode 
+{
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
+// 构建列表
+template<typename T>
+vector<T> BuildList(const initializer_list<T>& list)
+{
+    return vector<T>(list.begin(), list.end());
+}
+
 #endif
