@@ -189,6 +189,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "神奇的四次方数", "�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "可获得的最大点数", "LeetCode\可获得的最大点数\可获得的最大点数.vcxproj", "{DCA82D22-983B-4C6A-BF2E-994D550D4A04}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "和为K的子数组", "LeetCode\和为K的子数组\和为K的子数组.vcxproj", "{63F42C52-D06A-409D-BF0A-5A7D5B3176AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -909,6 +911,14 @@ Global
 		{DCA82D22-983B-4C6A-BF2E-994D550D4A04}.Release|x64.Build.0 = Release|x64
 		{DCA82D22-983B-4C6A-BF2E-994D550D4A04}.Release|x86.ActiveCfg = Release|Win32
 		{DCA82D22-983B-4C6A-BF2E-994D550D4A04}.Release|x86.Build.0 = Release|Win32
+		{63F42C52-D06A-409D-BF0A-5A7D5B3176AF}.Debug|x64.ActiveCfg = Debug|x64
+		{63F42C52-D06A-409D-BF0A-5A7D5B3176AF}.Debug|x64.Build.0 = Debug|x64
+		{63F42C52-D06A-409D-BF0A-5A7D5B3176AF}.Debug|x86.ActiveCfg = Debug|Win32
+		{63F42C52-D06A-409D-BF0A-5A7D5B3176AF}.Debug|x86.Build.0 = Debug|Win32
+		{63F42C52-D06A-409D-BF0A-5A7D5B3176AF}.Release|x64.ActiveCfg = Release|x64
+		{63F42C52-D06A-409D-BF0A-5A7D5B3176AF}.Release|x64.Build.0 = Release|x64
+		{63F42C52-D06A-409D-BF0A-5A7D5B3176AF}.Release|x86.ActiveCfg = Release|Win32
+		{63F42C52-D06A-409D-BF0A-5A7D5B3176AF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1003,6 +1013,7 @@ Global
 		{F994F4EB-0112-49A8-B615-A5A4E79EE452} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{E1F2F397-062C-49FE-9F46-82320B486135} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{DCA82D22-983B-4C6A-BF2E-994D550D4A04} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{63F42C52-D06A-409D-BF0A-5A7D5B3176AF} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
