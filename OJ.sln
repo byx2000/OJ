@@ -197,6 +197,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "工作计划的最低难度
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "给Nx3网格图涂色的方案数", "LeetCode\给Nx3网格图涂色的方案数\给Nx3网格图涂色的方案数.vcxproj", "{89F17AD5-63A3-40C4-95D0-E021A08DF3FA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "安排邮筒", "LeetCode\安排邮筒\安排邮筒.vcxproj", "{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -949,6 +951,14 @@ Global
 		{89F17AD5-63A3-40C4-95D0-E021A08DF3FA}.Release|x64.Build.0 = Release|x64
 		{89F17AD5-63A3-40C4-95D0-E021A08DF3FA}.Release|x86.ActiveCfg = Release|Win32
 		{89F17AD5-63A3-40C4-95D0-E021A08DF3FA}.Release|x86.Build.0 = Release|Win32
+		{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B}.Debug|x64.ActiveCfg = Debug|x64
+		{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B}.Debug|x64.Build.0 = Debug|x64
+		{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B}.Debug|x86.ActiveCfg = Debug|Win32
+		{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B}.Debug|x86.Build.0 = Debug|Win32
+		{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B}.Release|x64.ActiveCfg = Release|x64
+		{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B}.Release|x64.Build.0 = Release|x64
+		{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B}.Release|x86.ActiveCfg = Release|Win32
+		{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1047,6 +1057,7 @@ Global
 		{5DA0C181-D121-479A-9D83-9596326722CB} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{0476EB28-A93C-4256-9258-8A8FDCDE1CF0} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{89F17AD5-63A3-40C4-95D0-E021A08DF3FA} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
