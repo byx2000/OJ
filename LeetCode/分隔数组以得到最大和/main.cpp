@@ -61,8 +61,12 @@ public:
 
 int main()
 {
-    vector<int> nums{ 1,15,7,9,2,5,10 };
-    TEST(Assert::areEqual(Solution().maxSumAfterPartitioning(nums, 3), 84));
+    Cases<vector<int>, int, int> cases
+    {
+        {{ 1,15,7,9,2,5,10 }, 3, 84},
+    };
+
+    test(&Solution::maxSumAfterPartitioning, cases);
 
 	return 0;
 }
