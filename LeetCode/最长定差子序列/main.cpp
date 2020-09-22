@@ -140,14 +140,14 @@ public:
 
 int main()
 {
-    vector<int> nums{ 1,2,3,4 };
-    TEST(Assert::areEqual(Solution().longestSubsequence(nums, 1), 4));
+    Cases<vector<int>, int, int> cases
+    {
+        {{ 1,2,3,4 }, 1, 4},
+        {{ 1,3,5,7 }, 1, 1},
+        {{ 1,5,7,8,5,3,4,2,1 }, -2, 4},
+    };
 
-    nums = vector<int>{ 1,3,5,7 };
-    TEST(Assert::areEqual(Solution().longestSubsequence(nums, 1), 1));
-
-    nums = vector<int>{ 1,5,7,8,5,3,4,2,1 };
-    TEST(Assert::areEqual(Solution().longestSubsequence(nums, -2), 4));
+    test(&Solution::longestSubsequence, cases);
 
 	return 0;
 }
