@@ -95,4 +95,120 @@ vector<T> BuildList(const initializer_list<T>& list)
     return vector<T>(list.begin(), list.end());
 }
 
+// 批量测试
+
+// 测试用例数据类型
+template<typename... Args>
+using Cases = vector<tuple<Args...>>;
+
+// 1个输入
+template<typename C, typename T1, typename T2, typename T>
+void test(T(C::* func)(T1), const Cases<T2, T>& cases)
+{
+	bool failed = false;
+	for (size_t i = 0; i < cases.size(); ++i)
+	{
+		T2 input1 = get<0>(cases[i]);
+		T output = (C().*func)(input1);
+		T expected = get<1>(cases[i]);
+		if (output == expected)
+		{
+			cout << "Test case " << i + 1 << " passed!" << endl << endl;
+		}
+		else
+		{
+			failed = true;
+			cout << "Test case " << i + 1 << " failed:" << endl;
+			cout << "output: " << output << "\texpected: " << expected << endl;
+			cout << endl;
+		}
+	}
+
+	if (!failed)
+	{
+		cout << "All test cases passed!" << endl;
+	}
+}
+
+// 2个输入
+template<typename C, typename T1, typename T2, typename T3, typename T4, typename T>
+void test(T(C::* func)(T1, T2), const Cases<T3, T4, T>& cases)
+{
+	bool failed = false;
+	for (size_t i = 0; i < cases.size(); ++i)
+	{
+		T3 input1 = get<0>(cases[i]);
+		T4 input2 = get<1>(cases[i]);
+		T output = (C().*func)(input1, input2);
+		T expected = get<2>(cases[i]);
+		if (output == expected)
+		{
+			cout << "Test case " << i + 1 << " passed!" << endl << endl;
+		}
+		else
+		{
+			failed = true;
+			cout << "Test case " << i + 1 << " failed:" << endl;
+			cout << "output: " << output << "\texpected: " << expected << endl;
+			cout << endl;
+		}
+	}
+
+	if (!failed)
+	{
+		cout << "All test cases passed!" << endl;
+	}
+}
+
+// 3个输入
+template<typename C, typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T>
+void test(T(C::* func)(T1, T2, T3), const Cases<T4, T5, T6, T>& cases)
+{
+	bool failed = false;
+	for (size_t i = 0; i < cases.size(); ++i)
+	{
+		T4 input1 = get<0>(cases[i]);
+		T5 input2 = get<1>(cases[i]);
+		T6 input3 = get<2>(cases[i]);
+		T output = (C().*func)(input1, input2, input3);
+		T expected = get<3>(cases[i]);
+		if (output == expected)
+		{
+			cout << "Test case " << i + 1 << " passed!" << endl << endl;
+		}
+		else
+		{
+			failed = true;
+			cout << "Test case " << i + 1 << " failed:" << endl;
+			cout << "output: " << output << "\texpected: " << expected << endl;
+			cout << endl;
+		}
+	}
+
+	if (!failed)
+	{
+		cout << "All test cases passed!" << endl;
+	}
+}
+
+// 重载vector<T>输出
+template<typename T>
+ostream& operator<<(ostream& o, const vector<T>& v)
+{
+	o << "[";
+	for (int i = 0; i < (int)v.size(); ++i)
+	{
+		o << v[i];
+		if (i != (int)v.size() - 1)
+		{
+			o << ",";
+		}
+		else
+		{
+			o << "]";
+		}
+	}
+	return o;
+}
+
 #endif
