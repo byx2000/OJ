@@ -203,6 +203,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "摘樱桃", "LeetCode\摘�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "摘樱桃II", "LeetCode\摘樱桃II\摘樱桃II.vcxproj", "{765411B5-FD8F-425E-94F7-D4C0C28707D5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "分割数组的最大值", "LeetCode\分割数组的最大值\分割数组的最大值.vcxproj", "{B3E7DD6E-E6A2-4606-B750-CC967E3C638D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -979,6 +981,14 @@ Global
 		{765411B5-FD8F-425E-94F7-D4C0C28707D5}.Release|x64.Build.0 = Release|x64
 		{765411B5-FD8F-425E-94F7-D4C0C28707D5}.Release|x86.ActiveCfg = Release|Win32
 		{765411B5-FD8F-425E-94F7-D4C0C28707D5}.Release|x86.Build.0 = Release|Win32
+		{B3E7DD6E-E6A2-4606-B750-CC967E3C638D}.Debug|x64.ActiveCfg = Debug|x64
+		{B3E7DD6E-E6A2-4606-B750-CC967E3C638D}.Debug|x64.Build.0 = Debug|x64
+		{B3E7DD6E-E6A2-4606-B750-CC967E3C638D}.Debug|x86.ActiveCfg = Debug|Win32
+		{B3E7DD6E-E6A2-4606-B750-CC967E3C638D}.Debug|x86.Build.0 = Debug|Win32
+		{B3E7DD6E-E6A2-4606-B750-CC967E3C638D}.Release|x64.ActiveCfg = Release|x64
+		{B3E7DD6E-E6A2-4606-B750-CC967E3C638D}.Release|x64.Build.0 = Release|x64
+		{B3E7DD6E-E6A2-4606-B750-CC967E3C638D}.Release|x86.ActiveCfg = Release|Win32
+		{B3E7DD6E-E6A2-4606-B750-CC967E3C638D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1080,6 +1090,7 @@ Global
 		{4F81B0D3-C0B0-4C73-8120-50A9F9C7962B} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{62193F26-8F93-4E1F-A8DF-363CDAFC8B97} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{765411B5-FD8F-425E-94F7-D4C0C28707D5} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{B3E7DD6E-E6A2-4606-B750-CC967E3C638D} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
