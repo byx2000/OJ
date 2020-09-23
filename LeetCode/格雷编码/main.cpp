@@ -32,11 +32,18 @@ public:
     }
 };
 
+
+
 int main()
 {
-    TEST(Assert::areEqual(Solution().grayCode(1), vector<int>{ 0, 1 }));
-    TEST(Assert::areEqual(Solution().grayCode(2), vector<int>{ 0, 1, 3, 2 }));
-    TEST(Assert::areEqual(Solution().grayCode(3), vector<int>{ 0, 1, 3, 2, 6, 7, 5, 4 }));
+    Cases<int, vector<int>> cases
+    {
+        {1, {0, 1}},
+        {2, {0, 1, 3, 2}},
+        {3, {0, 1, 3, 2, 6, 7, 5, 4}},
+    };
+
+    test(&Solution::grayCode, cases);
 
     return 0;
 }

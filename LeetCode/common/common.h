@@ -95,6 +95,26 @@ vector<T> BuildList(const initializer_list<T>& list)
     return vector<T>(list.begin(), list.end());
 }
 
+// 重载vector<T>输出
+template<typename T>
+ostream& operator<<(ostream& o, const vector<T, allocator<T>>& v)
+{
+	o << "[";
+	for (int i = 0; i < (int)v.size(); ++i)
+	{
+		o << v[i];
+		if (i != (int)v.size() - 1)
+		{
+			o << ",";
+		}
+		else
+		{
+			o << "]";
+		}
+	}
+	return o;
+}
+
 // 批量测试
 
 // 测试用例数据类型
@@ -189,26 +209,6 @@ void test(T(C::* func)(T1, T2, T3), const Cases<T4, T5, T6, T>& cases)
 	{
 		cout << "All test cases passed!" << endl;
 	}
-}
-
-// 重载vector<T>输出
-template<typename T>
-ostream& operator<<(ostream& o, const vector<T>& v)
-{
-	o << "[";
-	for (int i = 0; i < (int)v.size(); ++i)
-	{
-		o << v[i];
-		if (i != (int)v.size() - 1)
-		{
-			o << ",";
-		}
-		else
-		{
-			o << "]";
-		}
-	}
-	return o;
 }
 
 #endif
