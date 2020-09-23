@@ -53,20 +53,16 @@ public:
 
 int main()
 {
-    vector<int> nums{ 1,3,5,4,7 };
-    TEST(Assert::areEqual(Solution().findNumberOfLIS(nums), 2));
+    Cases<vector<int>, int> cases
+    {
+        {{ 1,3,5,4,7 }, 2},
+        {{ 2,2,2,2,2 }, 5},
+        {{ 1,2,4,3,5,4,7,2 }, 3},
+        {{ }, 0},
+        {{ 1 }, 1},
+    };
 
-    nums = vector<int>{ 2,2,2,2,2 };
-    TEST(Assert::areEqual(Solution().findNumberOfLIS(nums), 5));
-
-    nums = vector<int>{ 1,2,4,3,5,4,7,2 };
-    TEST(Assert::areEqual(Solution().findNumberOfLIS(nums), 3));
-
-    nums = vector<int>{  };
-    TEST(Assert::areEqual(Solution().findNumberOfLIS(nums), 0));
-
-    nums = vector<int>{ 1 };
-    TEST(Assert::areEqual(Solution().findNumberOfLIS(nums), 1));
+    test(&Solution::findNumberOfLIS, cases);
 
 	return 0;
 }
