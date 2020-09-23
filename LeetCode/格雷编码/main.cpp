@@ -32,8 +32,6 @@ public:
     }
 };
 
-
-
 int main()
 {
     Cases<int, vector<int>> cases
