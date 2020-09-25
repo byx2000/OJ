@@ -217,6 +217,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "统计元音字母序列的
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "骑士拨号器", "LeetCode\骑士拨号器\骑士拨号器.vcxproj", "{A94A90BE-EDB1-415C-9C81-CFB20C100FFA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "有效的快递序列数目", "LeetCode\有效的快递序列数目\有效的快递序列数目.vcxproj", "{F7658694-2DFE-4545-AE61-917E198E74A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1049,6 +1051,14 @@ Global
 		{A94A90BE-EDB1-415C-9C81-CFB20C100FFA}.Release|x64.Build.0 = Release|x64
 		{A94A90BE-EDB1-415C-9C81-CFB20C100FFA}.Release|x86.ActiveCfg = Release|Win32
 		{A94A90BE-EDB1-415C-9C81-CFB20C100FFA}.Release|x86.Build.0 = Release|Win32
+		{F7658694-2DFE-4545-AE61-917E198E74A4}.Debug|x64.ActiveCfg = Debug|x64
+		{F7658694-2DFE-4545-AE61-917E198E74A4}.Debug|x64.Build.0 = Debug|x64
+		{F7658694-2DFE-4545-AE61-917E198E74A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{F7658694-2DFE-4545-AE61-917E198E74A4}.Debug|x86.Build.0 = Debug|Win32
+		{F7658694-2DFE-4545-AE61-917E198E74A4}.Release|x64.ActiveCfg = Release|x64
+		{F7658694-2DFE-4545-AE61-917E198E74A4}.Release|x64.Build.0 = Release|x64
+		{F7658694-2DFE-4545-AE61-917E198E74A4}.Release|x86.ActiveCfg = Release|Win32
+		{F7658694-2DFE-4545-AE61-917E198E74A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1157,6 +1167,7 @@ Global
 		{042A17DE-1127-4C7B-B72E-913B52671913} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{D0CF8B22-B852-47D7-B551-E2B9090286E9} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{A94A90BE-EDB1-415C-9C81-CFB20C100FFA} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{F7658694-2DFE-4545-AE61-917E198E74A4} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
