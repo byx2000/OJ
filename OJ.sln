@@ -223,6 +223,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "段式回文", "LeetCode\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "两个子序列的最大点积", "LeetCode\两个子序列的最大点积\两个子序列的最大点积.vcxproj", "{4DF1FCF1-0C40-48CE-B10A-035E36AA9307}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "布尔运算", "LeetCode\布尔运算\布尔运算.vcxproj", "{84F9BDF7-FC88-4EC6-8DCA-4F35357C8E53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1079,6 +1081,14 @@ Global
 		{4DF1FCF1-0C40-48CE-B10A-035E36AA9307}.Release|x64.Build.0 = Release|x64
 		{4DF1FCF1-0C40-48CE-B10A-035E36AA9307}.Release|x86.ActiveCfg = Release|Win32
 		{4DF1FCF1-0C40-48CE-B10A-035E36AA9307}.Release|x86.Build.0 = Release|Win32
+		{84F9BDF7-FC88-4EC6-8DCA-4F35357C8E53}.Debug|x64.ActiveCfg = Debug|x64
+		{84F9BDF7-FC88-4EC6-8DCA-4F35357C8E53}.Debug|x64.Build.0 = Debug|x64
+		{84F9BDF7-FC88-4EC6-8DCA-4F35357C8E53}.Debug|x86.ActiveCfg = Debug|Win32
+		{84F9BDF7-FC88-4EC6-8DCA-4F35357C8E53}.Debug|x86.Build.0 = Debug|Win32
+		{84F9BDF7-FC88-4EC6-8DCA-4F35357C8E53}.Release|x64.ActiveCfg = Release|x64
+		{84F9BDF7-FC88-4EC6-8DCA-4F35357C8E53}.Release|x64.Build.0 = Release|x64
+		{84F9BDF7-FC88-4EC6-8DCA-4F35357C8E53}.Release|x86.ActiveCfg = Release|Win32
+		{84F9BDF7-FC88-4EC6-8DCA-4F35357C8E53}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1190,6 +1200,7 @@ Global
 		{F7658694-2DFE-4545-AE61-917E198E74A4} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{4E6771F8-6E28-490D-B722-B53BD3D70D61} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{4DF1FCF1-0C40-48CE-B10A-035E36AA9307} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{84F9BDF7-FC88-4EC6-8DCA-4F35357C8E53} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
