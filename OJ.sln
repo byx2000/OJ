@@ -235,6 +235,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windy数", "洛谷\windy数
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Round Numbers S", "洛谷\Round Numbers S\Round Numbers S.vcxproj", "{CCFEC603-E2C0-4B5A-8B87-3BADB17D676B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "不含连续1的非负整数", "LeetCode\不含连续1的非负整数\不含连续1的非负整数.vcxproj", "{88247B30-E063-4B7B-A8FF-D50568E8E239}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1139,6 +1141,14 @@ Global
 		{CCFEC603-E2C0-4B5A-8B87-3BADB17D676B}.Release|x64.Build.0 = Release|x64
 		{CCFEC603-E2C0-4B5A-8B87-3BADB17D676B}.Release|x86.ActiveCfg = Release|Win32
 		{CCFEC603-E2C0-4B5A-8B87-3BADB17D676B}.Release|x86.Build.0 = Release|Win32
+		{88247B30-E063-4B7B-A8FF-D50568E8E239}.Debug|x64.ActiveCfg = Debug|x64
+		{88247B30-E063-4B7B-A8FF-D50568E8E239}.Debug|x64.Build.0 = Debug|x64
+		{88247B30-E063-4B7B-A8FF-D50568E8E239}.Debug|x86.ActiveCfg = Debug|Win32
+		{88247B30-E063-4B7B-A8FF-D50568E8E239}.Debug|x86.Build.0 = Debug|Win32
+		{88247B30-E063-4B7B-A8FF-D50568E8E239}.Release|x64.ActiveCfg = Release|x64
+		{88247B30-E063-4B7B-A8FF-D50568E8E239}.Release|x64.Build.0 = Release|x64
+		{88247B30-E063-4B7B-A8FF-D50568E8E239}.Release|x86.ActiveCfg = Release|Win32
+		{88247B30-E063-4B7B-A8FF-D50568E8E239}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1256,6 +1266,7 @@ Global
 		{901EEEF5-C454-42FC-8A37-C1AF227C35E5} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{FA19D487-99D6-4824-A99B-D5BFAAC62364} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{CCFEC603-E2C0-4B5A-8B87-3BADB17D676B} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
+		{88247B30-E063-4B7B-A8FF-D50568E8E239} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
