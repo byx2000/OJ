@@ -241,6 +241,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "一和零", "LeetCode\一�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "不要62", "LibreOJ\不要62\不要62.vcxproj", "{9970A389-6D59-4C93-9F59-279EA30E443A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "手机号码", "LibreOJ\手机号码\手机号码.vcxproj", "{89D6B872-F188-403C-9385-2847D8B08B26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1169,6 +1171,14 @@ Global
 		{9970A389-6D59-4C93-9F59-279EA30E443A}.Release|x64.Build.0 = Release|x64
 		{9970A389-6D59-4C93-9F59-279EA30E443A}.Release|x86.ActiveCfg = Release|Win32
 		{9970A389-6D59-4C93-9F59-279EA30E443A}.Release|x86.Build.0 = Release|Win32
+		{89D6B872-F188-403C-9385-2847D8B08B26}.Debug|x64.ActiveCfg = Debug|x64
+		{89D6B872-F188-403C-9385-2847D8B08B26}.Debug|x64.Build.0 = Debug|x64
+		{89D6B872-F188-403C-9385-2847D8B08B26}.Debug|x86.ActiveCfg = Debug|Win32
+		{89D6B872-F188-403C-9385-2847D8B08B26}.Debug|x86.Build.0 = Debug|Win32
+		{89D6B872-F188-403C-9385-2847D8B08B26}.Release|x64.ActiveCfg = Release|x64
+		{89D6B872-F188-403C-9385-2847D8B08B26}.Release|x64.Build.0 = Release|x64
+		{89D6B872-F188-403C-9385-2847D8B08B26}.Release|x86.ActiveCfg = Release|Win32
+		{89D6B872-F188-403C-9385-2847D8B08B26}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1289,6 +1299,7 @@ Global
 		{88247B30-E063-4B7B-A8FF-D50568E8E239} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{7A0AAC78-D982-4B6A-B343-EE17F3BC0F2A} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{9970A389-6D59-4C93-9F59-279EA30E443A} = {41DD9409-35DE-4A1D-B009-49155CD98035}
+		{89D6B872-F188-403C-9385-2847D8B08B26} = {41DD9409-35DE-4A1D-B009-49155CD98035}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
