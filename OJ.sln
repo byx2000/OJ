@@ -251,6 +251,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "数字游戏2", "LibreOJ\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "同类分布", "洛谷\同类分布\同类分布.vcxproj", "{29878F85-FF65-40FD-A816-8B9BEF020F10}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DI序列的有效排列", "LeetCode\DI序列的有效排列\DI序列的有效排列.vcxproj", "{659C77CC-A8EC-40F9-A58A-253C43DB1EA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1219,6 +1221,14 @@ Global
 		{29878F85-FF65-40FD-A816-8B9BEF020F10}.Release|x64.Build.0 = Release|x64
 		{29878F85-FF65-40FD-A816-8B9BEF020F10}.Release|x86.ActiveCfg = Release|Win32
 		{29878F85-FF65-40FD-A816-8B9BEF020F10}.Release|x86.Build.0 = Release|Win32
+		{659C77CC-A8EC-40F9-A58A-253C43DB1EA1}.Debug|x64.ActiveCfg = Debug|x64
+		{659C77CC-A8EC-40F9-A58A-253C43DB1EA1}.Debug|x64.Build.0 = Debug|x64
+		{659C77CC-A8EC-40F9-A58A-253C43DB1EA1}.Debug|x86.ActiveCfg = Debug|Win32
+		{659C77CC-A8EC-40F9-A58A-253C43DB1EA1}.Debug|x86.Build.0 = Debug|Win32
+		{659C77CC-A8EC-40F9-A58A-253C43DB1EA1}.Release|x64.ActiveCfg = Release|x64
+		{659C77CC-A8EC-40F9-A58A-253C43DB1EA1}.Release|x64.Build.0 = Release|x64
+		{659C77CC-A8EC-40F9-A58A-253C43DB1EA1}.Release|x86.ActiveCfg = Release|Win32
+		{659C77CC-A8EC-40F9-A58A-253C43DB1EA1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1344,6 +1354,7 @@ Global
 		{BC3120F3-7B5D-4316-B315-E843B65383ED} = {41DD9409-35DE-4A1D-B009-49155CD98035}
 		{7A4B3271-B8CF-4C3C-8355-18BDA6762BBE} = {41DD9409-35DE-4A1D-B009-49155CD98035}
 		{29878F85-FF65-40FD-A816-8B9BEF020F10} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
+		{659C77CC-A8EC-40F9-A58A-253C43DB1EA1} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
