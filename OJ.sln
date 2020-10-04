@@ -261,6 +261,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Corn Fields G", "洛谷\Cor
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cows in a Skyscraper G", "洛谷\Cows in a Skyscraper G\Cows in a Skyscraper G.vcxproj", "{77515F89-1C0A-413B-9B52-947C0C3514DD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "中国象棋", "洛谷\中国象棋\中国象棋.vcxproj", "{69E59199-A020-4D76-B8E3-06AF6D302A51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1269,6 +1271,14 @@ Global
 		{77515F89-1C0A-413B-9B52-947C0C3514DD}.Release|x64.Build.0 = Release|x64
 		{77515F89-1C0A-413B-9B52-947C0C3514DD}.Release|x86.ActiveCfg = Release|Win32
 		{77515F89-1C0A-413B-9B52-947C0C3514DD}.Release|x86.Build.0 = Release|Win32
+		{69E59199-A020-4D76-B8E3-06AF6D302A51}.Debug|x64.ActiveCfg = Debug|x64
+		{69E59199-A020-4D76-B8E3-06AF6D302A51}.Debug|x64.Build.0 = Debug|x64
+		{69E59199-A020-4D76-B8E3-06AF6D302A51}.Debug|x86.ActiveCfg = Debug|Win32
+		{69E59199-A020-4D76-B8E3-06AF6D302A51}.Debug|x86.Build.0 = Debug|Win32
+		{69E59199-A020-4D76-B8E3-06AF6D302A51}.Release|x64.ActiveCfg = Release|x64
+		{69E59199-A020-4D76-B8E3-06AF6D302A51}.Release|x64.Build.0 = Release|x64
+		{69E59199-A020-4D76-B8E3-06AF6D302A51}.Release|x86.ActiveCfg = Release|Win32
+		{69E59199-A020-4D76-B8E3-06AF6D302A51}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1399,6 +1409,7 @@ Global
 		{DC5A64F9-5877-4899-BAF7-2B54529A1AF2} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{18419FDF-FECE-484B-AE4F-3E454E9D575E} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 		{77515F89-1C0A-413B-9B52-947C0C3514DD} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
+		{69E59199-A020-4D76-B8E3-06AF6D302A51} = {C105E594-42CC-49D9-A13E-07C2DB4C2EC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
