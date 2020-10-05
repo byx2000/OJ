@@ -63,16 +63,12 @@ public:
 
 int main()
 {
-    vector<vector<int>> output
+    Cases<int, int, vector<vector<int>>> cases
     {
-        {2, 4},
-        {3, 4},
-        {2, 3},
-        {1, 2},
-        {1, 3},
-        {1, 4},
+        {4, 2, {{2, 4}, {3, 4}, {2, 3}, {1, 2}, {1, 3}, {1, 4}}},
     };
-    TEST(Assert::areEquivalent(Solution().combine(4, 2), output));
+
+    test(&Solution::combine, cases, equivalent);
 
 	return 0;
 }
