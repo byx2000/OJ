@@ -82,5 +82,53 @@ int main()
 	vector<string> vs{ "abc", "de", "ghij" };
 	cout << vs << endl;
 
+	TreeNode* t = BuildTree({ 1 });
+	assert(t->val == 1);
+	assert(t->left == NULL);
+	assert(t->right == NULL);
+	DestroyTree(t);
+
+	t = BuildTree({ 1, null });
+	assert(t->val == 1);
+	assert(t->left == NULL);
+	assert(t->right == NULL);
+	DestroyTree(t);
+
+	t = BuildTree({ 1, null, null });
+	assert(t->val == 1);
+	assert(t->left == NULL);
+	assert(t->right == NULL);
+	DestroyTree(t);
+
+	t = BuildTree({ 1, null, null, null });
+	assert(t->val == 1);
+	assert(t->left == NULL);
+	assert(t->right == NULL);
+	DestroyTree(t);
+
+	t = BuildTree({ 1, 2, 3 });
+	assert(t->val == 1);
+	assert(t->left->val == 2);
+	assert(t->left->left == NULL);
+	assert(t->left->right == NULL);
+	assert(t->right->val == 3);
+	assert(t->right->left == NULL);
+	assert(t->right->right == NULL);
+	DestroyTree(t);
+
+	t = BuildTree({ 1, null, 2, 3 });
+	assert(t->val == 1);
+	assert(t->left == NULL);
+	assert(t->right->val == 2);
+	assert(t->right->left->val == 3);
+	assert(t->right->right == NULL);
+	DestroyTree(t);
+
+	TreeNode* t1 = BuildTree({ 1, null, 2, 3, null, null, 4 });
+	TreeNode* t2 = BuildTree({ 1, null, 2, 3, null, null, 4 });
+	TreeNode* t3 = BuildTree({ 1, null, 2, 3, null, 5 });
+	assert(TreeEqual(t1, t2));
+	assert(!TreeEqual(t1, t3));
+
 	return 0;
 }

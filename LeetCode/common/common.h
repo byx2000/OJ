@@ -80,13 +80,55 @@ public:
 #define TEST(condition) do{if(!(condition))assert(false);}while(0)
 
 // 二叉树节点
-struct TreeNode 
+struct TreeNode
 {
-    int val;
-    TreeNode* left;
-    TreeNode* right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+	int val;
+	TreeNode* left;
+	TreeNode* right;
+	TreeNode() : val(0), left(nullptr), right(nullptr) {}
+	TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+	TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
 };
+
+// 一个不会出现在二叉树中的值，表示空节点
+const int null = numeric_limits<int>::max();
+
+// 解析LeetCode二叉树格式，创建二叉树
+TreeNode* BuildTree(const vector<int>& nums)
+{
+	queue<TreeNode*> q;
+	TreeNode* root = new TreeNode(nums[0]);
+	q.push(root);
+	for (int i = 1; i < (int)nums.size(); i += 2)
+	{
+		if (q.empty()) break;
+		TreeNode* cur = q.front();
+		q.pop();
+		cur->left = (nums[i] != null) ? new TreeNode(nums[i]) : NULL;
+		cur->right = (i + 1 < (int)nums.size() && nums[i + 1] != null) ? new TreeNode(nums[i + 1]) : NULL;
+		if (cur->left != NULL) q.push(cur->left);
+		if (cur->right != NULL) q.push(cur->right);
+	}
+	return root;
+}
+
+// 判断二叉树是否相等
+bool TreeEqual(TreeNode* t1, TreeNode* t2)
+{
+	if (t1 == NULL && t2 != NULL) return false;
+	if (t1 != NULL && t2 == NULL) return false;
+	if (t1 == NULL && t2 == NULL) return true;
+	return t1->val == t2->val && TreeEqual(t1->left, t2->left) && TreeEqual(t1->right, t2->right);
+}
+
+// 释放二叉树
+void DestroyTree(TreeNode* root)
+{
+	if (root == NULL) return;
+	DestroyTree(root->left);
+	DestroyTree(root->right);
+	delete(root);
+}
 
 // 重载vector<T>输出
 template<typename T>
