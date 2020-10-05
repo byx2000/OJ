@@ -88,17 +88,12 @@ public:
 
 int main()
 {
-    vector<int> nums{ 1, 2, 3 };
-    vector<vector<int>> output
+    Cases<vector<int>, vector<vector<int>>> cases
     {
-        {1, 2, 3},
-        {1, 3, 2},
-        {2, 1, 3},
-        {2, 3, 1},
-        {3, 1, 2},
-        {3, 2, 1},
+        {{1, 2, 3}, {{1, 2, 3}, {1, 3, 2}, {2, 1, 3}, {2, 3, 1}, {3, 1, 2}, {3, 2, 1}}},
     };
-    TEST(Assert::areEquivalent(Solution().permute(nums), output));
+
+    test(&Solution::permute, cases, equivalent);
 
     return 0;
 }
