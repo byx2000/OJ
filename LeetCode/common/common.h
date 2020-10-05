@@ -119,9 +119,9 @@ bool equal(T a, T b)
 
 // 判断等价
 template<typename T>
-bool equivalent(const vector<T>& a, const vector<T>& b)
+bool equivalent(T a, T b)
 {
-	return set<T>(begin(a), end(a)) == set<T>(begin(b), end(b));
+	return set<T::value_type>(begin(a), end(a)) == set<T::value_type>(begin(b), end(b));
 }
 
 // 测试用例数据类型

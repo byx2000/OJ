@@ -180,11 +180,13 @@ public:
 
 int main()
 {
-    vector<int> nums{ 3,2,1 };
-    TEST(Assert::areEquivalent(Solution().getLeastNumbers(nums, 2), vector<int>{1, 2}));
+    Cases<vector<int>, int, vector<int>> cases
+    {
+        {{ 3,2,1 }, 2, {1, 2}},
+        {{ 0,1,2,1 }, 1, {0}},
+    };
 
-    nums = vector<int>{ 0,1,2,1 };
-    TEST(Assert::areEquivalent(Solution().getLeastNumbers(nums, 1), vector<int>{0}));
+    test(&Solution::getLeastNumbers, cases, equivalent<vector<int>>);
 
 	return 0;
 }
