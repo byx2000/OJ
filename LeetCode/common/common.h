@@ -129,8 +129,8 @@ template<typename... Args>
 using Cases = vector<tuple<Args...>>;
 
 // 1个输入
-template<typename C, typename T1, typename T2, typename T>
-void test(T(C::* func)(T1), const Cases<T2, T>& cases)
+template<typename C, typename T1, typename T2, typename T, typename Cmp = bool(*)(T, T)>
+void test(T(C::* func)(T1), const Cases<T2, T>& cases, Cmp cmp = equal<T>)
 {
 	bool failed = false;
 	for (size_t i = 0; i < cases.size(); ++i)
@@ -138,7 +138,7 @@ void test(T(C::* func)(T1), const Cases<T2, T>& cases)
 		T2 input1 = get<0>(cases[i]);
 		T output = (C().*func)(input1);
 		T expected = get<1>(cases[i]);
-		if (output == expected)
+		if (cmp(output, expected))
 		{
 			cout << "Test case " << i + 1 << " passed!" << endl << endl;
 		}
@@ -158,8 +158,8 @@ void test(T(C::* func)(T1), const Cases<T2, T>& cases)
 }
 
 // 2个输入
-template<typename C, typename T1, typename T2, typename T3, typename T4, typename T>
-void test(T(C::* func)(T1, T2), const Cases<T3, T4, T>& cases)
+template<typename C, typename T1, typename T2, typename T3, typename T4, typename T, typename Cmp = bool(*)(T, T)>
+void test(T(C::* func)(T1, T2), const Cases<T3, T4, T>& cases, Cmp cmp = equal<T>)
 {
 	bool failed = false;
 	for (size_t i = 0; i < cases.size(); ++i)
@@ -168,7 +168,7 @@ void test(T(C::* func)(T1, T2), const Cases<T3, T4, T>& cases)
 		T4 input2 = get<1>(cases[i]);
 		T output = (C().*func)(input1, input2);
 		T expected = get<2>(cases[i]);
-		if (output == expected)
+		if (cmp(output, expected))
 		{
 			cout << "Test case " << i + 1 << " passed!" << endl << endl;
 		}
@@ -188,8 +188,8 @@ void test(T(C::* func)(T1, T2), const Cases<T3, T4, T>& cases)
 }
 
 // 3个输入
-template<typename C, typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T>
-void test(T(C::* func)(T1, T2, T3), const Cases<T4, T5, T6, T>& cases)
+template<typename C, typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T, typename Cmp = bool(*)(T, T)>
+void test(T(C::* func)(T1, T2, T3), const Cases<T4, T5, T6, T>& cases, Cmp cmp = equal<T>)
 {
 	bool failed = false;
 	for (size_t i = 0; i < cases.size(); ++i)
@@ -199,7 +199,7 @@ void test(T(C::* func)(T1, T2, T3), const Cases<T4, T5, T6, T>& cases)
 		T6 input3 = get<2>(cases[i]);
 		T output = (C().*func)(input1, input2, input3);
 		T expected = get<3>(cases[i]);
-		if (output == expected)
+		if (cmp(output, expected))
 		{
 			cout << "Test case " << i + 1 << " passed!" << endl << endl;
 		}
