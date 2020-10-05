@@ -142,11 +142,8 @@ ostream& operator<<(ostream& o, const vector<T, allocator<T>>& v)
 		{
 			o << ",";
 		}
-		else
-		{
-			o << "]";
-		}
 	}
+	o << "]";
 	return o;
 }
 
