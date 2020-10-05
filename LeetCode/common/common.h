@@ -88,13 +88,6 @@ struct TreeNode
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-// 构建列表
-template<typename T>
-vector<T> BuildList(const initializer_list<T>& list)
-{
-    return vector<T>(list.begin(), list.end());
-}
-
 // 重载vector<T>输出
 template<typename T>
 ostream& operator<<(ostream& o, const vector<T, allocator<T>>& v)
@@ -116,6 +109,20 @@ ostream& operator<<(ostream& o, const vector<T, allocator<T>>& v)
 }
 
 // 批量测试
+
+// 判断相等
+template<typename T>
+bool equal(T a, T b)
+{
+	return a == b;
+}
+
+// 判断等价
+template<typename T>
+bool equivalent(const vector<T>& a, const vector<T>& b)
+{
+	return set<T>(begin(a), end(a)) == set<T>(begin(b), end(b));
+}
 
 // 测试用例数据类型
 template<typename... Args>

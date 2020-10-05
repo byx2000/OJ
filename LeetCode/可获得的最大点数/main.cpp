@@ -123,35 +123,16 @@ public:
 
 int main()
 {
-    vector<int> nums = BuildList({ 1,2,3,4,5,6,1 });
-    int k = 3;
-    int answer = 12;
-    TEST(Assert::areEqual(Solution().maxScore(nums, k), answer));
+    Cases<vector<int>, int, int> cases
+    {
+        {{ 1,2,3,4,5,6,1 }, 3, 12},
+        {{ 2,2,2 }, 2, 4},
+        {{ 9,7,7,9,7,7,9 }, 7, 55},
+        {{ 1,1000,1 }, 1, 1},
+        {{ 1,79,80,1,1,1,200,1 }, 3, 202},
+    };
 
-    nums = BuildList({ 2,2,2 });
-    k = 2;
-    answer = 4;
-    TEST(Assert::areEqual(Solution().maxScore(nums, k), answer));
-
-    nums = BuildList({ 9,7,7,9,7,7,9 });
-    k = 7;
-    answer = 55;
-    TEST(Assert::areEqual(Solution().maxScore(nums, k), answer));
-
-    nums = BuildList({ 1,1000,1 });
-    k = 1;
-    answer = 1;
-    TEST(Assert::areEqual(Solution().maxScore(nums, k), answer));
-
-    nums = BuildList({ 1,1000,1 });
-    k = 1;
-    answer = 1;
-    TEST(Assert::areEqual(Solution().maxScore(nums, k), answer));
-
-    nums = BuildList({ 1,79,80,1,1,1,200,1 });
-    k = 3;
-    answer = 202;
-    TEST(Assert::areEqual(Solution().maxScore(nums, k), answer));
+    test(&Solution::maxScore, cases);
 
 	return 0;
 }

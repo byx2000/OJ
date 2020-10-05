@@ -49,9 +49,6 @@ int main()
 		TEST(!Assert::areEquivalent(a, b));
 	}
 
-	TEST(Assert::areEqual(BuildList({ 1, 2, 3, 4, 5 }), vector<int>{1, 2, 3, 4, 5}));
-	TEST(Assert::areEqual(BuildList<int>({}), vector<int>{}));
-
 	Cases<vector<int>, string, int, int> cases1
 	{
 		{ {2, 3}, "abc", 3, 8},
