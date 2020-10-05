@@ -75,11 +75,16 @@ public:
 
 int main()
 {
-    TEST(!Assert::isTrue(Solution().isMatch("aa", "a")));
-    TEST(Assert::isTrue(Solution().isMatch("aa", "*")));
-    TEST(!Assert::isTrue(Solution().isMatch("cb", "?a")));
-    TEST(Assert::isTrue(Solution().isMatch("adceb", "*a*b")));
-    TEST(!Assert::isTrue(Solution().isMatch("acdcb", "a*c?b")));
+    Cases<string, string, bool> cases
+    {
+        {"aa", "a", false},
+        {"aa", "*", true},
+        {"cb", "?a", false},
+        {"adceb", "*a*b", true},
+        {"acdcb", "a*c?b", false},
+    };
+
+    test(&Solution::isMatch, cases);
 
 	return 0;
 }

@@ -110,11 +110,13 @@ public:
 
 int main()
 {	
-    vector<int> nums{ 5,2,3,1 };
-    TEST(Assert::areEqual(Solution().sortArray(nums), vector<int>{1, 2, 3, 5}));
+    Cases<vector<int>, vector<int>> cases
+    {
+        {{5,2,3,1}, {1, 2, 3, 5}},
+        {{5,1,1,2,0,0}, {0, 0, 1, 1, 2, 5}},
+    };
 
-    nums = vector<int>{ 5,1,1,2,0,0 };
-    TEST(Assert::areEqual(Solution().sortArray(nums), vector<int>{0, 0, 1, 1, 2, 5}));
+    test(&Solution::sortArray, cases);
 
 	return 0;
 }

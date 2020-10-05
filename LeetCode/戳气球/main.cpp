@@ -62,11 +62,13 @@ public:
 
 int main()
 {
-    vector<int> input{ 3, 1, 5, 8 };
-    TEST(Assert::areEqual(Solution().maxCoins(input), 167));
+    Cases<vector<int>, int> cases
+    {
+        {{3, 1, 5, 8}, 167},
+        {{8, 2, 6, 8, 9, 8, 1, 4, 1, 5, 3, 0, 7, 7, 0, 4, 2, 2}, 3446},
+    };
 
-    input = vector<int>{ 8, 2, 6, 8, 9, 8, 1, 4, 1, 5, 3, 0, 7, 7, 0, 4, 2, 2 };
-    TEST(Assert::areEqual(Solution().maxCoins(input), 3446));
+    test(&Solution::maxCoins, cases);
 
 	return 0;
 }

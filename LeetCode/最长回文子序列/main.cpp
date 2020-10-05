@@ -122,12 +122,17 @@ public:
 
 int main()
 {
-    TEST(Assert::areEqual(Solution().longestPalindromeSubseq("a"), 1));
-    TEST(Assert::areEqual(Solution().longestPalindromeSubseq("aa"), 2));
-    TEST(Assert::areEqual(Solution().longestPalindromeSubseq("ab"), 1));/**/
-    TEST(Assert::areEqual(Solution().longestPalindromeSubseq("aaa"), 3));
-    TEST(Assert::areEqual(Solution().longestPalindromeSubseq("bbbab"), 4));
-    TEST(Assert::areEqual(Solution().longestPalindromeSubseq("cbbd"), 2));/**/
+    Cases<string, int> cases
+    {
+        {"a", 1},
+        {"aa", 2},
+        {"ab", 1},
+        {"aaa", 3},
+        {"bbbab", 4},
+        {"cbbd", 2},
+    };
+
+    test(&Solution::longestPalindromeSubseq, cases);
 
 	return 0;
 }

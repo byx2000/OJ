@@ -41,7 +41,12 @@ public:
 
 int main()
 {
-    TEST(Assert::areEqual(Solution().translateNum(12258), 5));
+    Cases<int, int> cases
+    {
+        {12258, 5},
+    };
+
+    test(&Solution::translateNum, cases);
 
 	return 0;
 }

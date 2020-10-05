@@ -73,20 +73,16 @@ public:
 
 int main()
 {
-    vector<vector<int>> nums{ {3,1,1},{2,5,1},{1,5,5},{2,1,1} };
-    TEST(Assert::areEqual(Solution().cherryPickup(nums), 24));
+    Cases<vector<vector<int>>, int> cases
+    {
+        {{ {3,1,1},{2,5,1},{1,5,5},{2,1,1} }, 24},
+        {{ {1,0,0,0,0,0,1},{2,0,0,0,0,3,0},{2,0,9,0,0,0,0},{0,3,0,5,4,0,0},{1,0,2,3,0,0,6} }, 28},
+        {{ {1,0,0,3},{0,0,0,3},{0,0,3,3},{9,0,3,3} }, 22},
+        {{ {1,1},{1,1} }, 4},
+        {{ {4,1,5,7,1},{6,0,4,6,4},{0,9,6,3,5} }, 32},
+    };
 
-    nums = vector<vector<int>>{ {1,0,0,0,0,0,1},{2,0,0,0,0,3,0},{2,0,9,0,0,0,0},{0,3,0,5,4,0,0},{1,0,2,3,0,0,6} };
-    TEST(Assert::areEqual(Solution().cherryPickup(nums), 28));
-
-    nums = vector<vector<int>>{ {1,0,0,3},{0,0,0,3},{0,0,3,3},{9,0,3,3} };
-    TEST(Assert::areEqual(Solution().cherryPickup(nums), 22));
-
-    nums = vector<vector<int>>{ {1,1},{1,1} };
-    TEST(Assert::areEqual(Solution().cherryPickup(nums), 4));
-
-    nums = vector<vector<int>>{ {4,1,5,7,1},{6,0,4,6,4},{0,9,6,3,5} };
-    TEST(Assert::areEqual(Solution().cherryPickup(nums), 32));
+    test(&Solution::cherryPickup, cases);
 
 	return 0;
 }

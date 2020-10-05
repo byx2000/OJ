@@ -288,41 +288,23 @@ public:
 
 int main()
 {
-    vector<int> nums{ 1, 2 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 2));
+    Cases<vector<int>, int> cases
+    {
+        {{ 1, 2 }, 2},
+        {{ 2, 2 }, 2},
+        {{ 1, 2, 3 }, 3},
+        {{ 3, 2, 1 }, 3},
+        {{ 1, 2, -1 }, 2},
+        {{ 1, 2, 3, 4 }, 4},
+        {{ 1, 2, 4, 3 }, 3},
+        {{ 4, 1, 2, 3 }, 3},
+        {{ 1, 1, 0, 1 }, 3},
+        {{ 3,6,9,12 }, 4},
+        {{ 9,4,7,2,10 }, 3},
+        {{ 20,1,15,3,10,5,8 }, 4},
+    };
 
-    nums = vector<int>{ 2, 2 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 2));
-
-    nums = vector<int>{ 1, 2, 3 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 3));
-
-    nums = vector<int>{ 3, 2, 1 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 3));
-
-    nums = vector<int>{ 1, 2, -1 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 2));
-
-    nums = vector<int>{ 1, 2, 3, 4 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 4));
-
-    nums = vector<int>{ 1, 2, 4, 3 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 3));
-
-    nums = vector<int>{ 4, 1, 2, 3 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 3));
-
-    nums = vector<int>{ 1, 1, 0, 1 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 3));
-
-    nums = vector<int>{ 3,6,9,12 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 4));
-
-    nums = vector<int>{ 9,4,7,2,10 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 3));
-
-    nums = vector<int>{ 20,1,15,3,10,5,8 };
-    TEST(Assert::areEqual(Solution().longestArithSeqLength(nums), 4));
+    test(&Solution::longestArithSeqLength, cases);
 
 	return 0;
 }

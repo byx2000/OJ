@@ -66,8 +66,13 @@ public:
 
 int main()
 {
-    TEST(Assert::areEqual(Solution().waysToChange(5), 2));
-    TEST(Assert::areEqual(Solution().waysToChange(10), 4));
+    Cases<int, int> cases
+    {
+        {5, 2},
+        {10, 4},
+    };
+
+    test(&Solution::waysToChange, cases);
 
 	return 0;
 }

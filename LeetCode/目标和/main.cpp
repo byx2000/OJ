@@ -41,8 +41,12 @@ public:
 
 int main()
 {
-    vector<int> nums{ 1, 1, 1, 1, 1 };
-    TEST(Assert::areEqual(Solution().findTargetSumWays(nums, 3), 5));
+    Cases<vector<int>, int, int> cases
+    {
+        {{1, 1, 1, 1, 1}, 3, 5},
+    };
+
+    test(&Solution::findTargetSumWays, cases);
 
 	return 0;
 }

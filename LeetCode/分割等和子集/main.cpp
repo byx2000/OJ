@@ -54,11 +54,13 @@ public:
 
 int main()
 {
-    vector<int> v{ 1, 5, 11, 5 };
-    TEST(Assert::isTrue(Solution().canPartition(v)));
+    Cases<vector<int>, bool> cases
+    {
+        {{1, 5, 11, 5}, true},
+        {{1, 2, 3, 5}, false},
+    };
 
-    v = vector<int>{ 1, 2, 3, 5 };
-    TEST(!Assert::isTrue(Solution().canPartition(v)));
+    test(&Solution::canPartition, cases);
 
 	return 0;
 }
