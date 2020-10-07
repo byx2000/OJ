@@ -96,6 +96,8 @@ const int null = numeric_limits<int>::max();
 // 解析LeetCode二叉树格式，创建二叉树
 TreeNode* BuildTree(const vector<int>& nums)
 {
+	if (nums.size() == 0) return NULL;
+
 	queue<TreeNode*> q;
 	TreeNode* root = new TreeNode(nums[0]);
 	q.push(root);
