@@ -31,13 +31,13 @@ public:
 
     int solve()
     {
-        stack<State> callStack;
-        callStack.push(State(root, 0));
+        stack<Frame> callStack;
+        callStack.push(Frame(root, 0));
         int retVal = 0;
 
         while (!callStack.empty())
         {
-            State& cur = callStack.top();
+            Frame& cur = callStack.top();
 
             if (cur.s == 0)
             {
@@ -46,13 +46,13 @@ public:
                     retVal = 0; callStack.pop(); continue; 
                 }
                 cur.s = 1;
-                callStack.push(State(cur.p->left, 0));
+                callStack.push(Frame(cur.p->left, 0));
             }
             else if (cur.s == 1)
             {
                 cur.t = retVal;
                 cur.s = 2;
-                callStack.push(State(cur.p->right, 0));
+                callStack.push(Frame(cur.p->right, 0));
             }
             else if (cur.s == 2)
             {
@@ -68,12 +68,12 @@ public:
 private:
     TreeNode* root;
 
-    struct State
+    struct Frame
     {
         TreeNode* p;
         int s;
         int t;
-        State(TreeNode* p, int s) : p(p), s(s), t(0) {}
+        Frame(TreeNode* p, int s) : p(p), s(s), t(0) {}
     };
 };
 

@@ -37,24 +37,24 @@ public:
     vector<int> solve()
     {
         vector<int> result;
-        stack<State> callStack;
-        callStack.push(State(root, 0));
+        stack<Frame> callStack;
+        callStack.push(Frame(root, 0));
 
         while (!callStack.empty())
         {
-            State& cur = callStack.top();
+            Frame& cur = callStack.top();
 
             if (cur.s == 0)
             {
                 if (cur.p == NULL) { callStack.pop(); continue; }
                 cur.s = 1;
-                callStack.push(State(cur.p->left, 0));
+                callStack.push(Frame(cur.p->left, 0));
             }
             else if (cur.s == 1)
             {
                 result.push_back(cur.p->val);
                 cur.s = 2;
-                callStack.push(State(cur.p->right, 0));
+                callStack.push(Frame(cur.p->right, 0));
             }
             else
             {
@@ -68,11 +68,11 @@ public:
 private:
     TreeNode* root;
 
-    struct State
+    struct Frame
     {
         TreeNode* p;
         int s;
-        State(TreeNode* p, int s) : p(p), s(s) {}
+        Frame(TreeNode* p, int s) : p(p), s(s) {}
     };
 };
 
