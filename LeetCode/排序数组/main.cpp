@@ -58,7 +58,7 @@ private:
     }
 };
 
-// 快速排序
+// 快速排序 递归
 class Solution2
 {
 public:
@@ -98,13 +98,72 @@ private:
     }
 };
 
+// 快速排序 非递归
+class Solution3
+{
+public:
+    Solution3(const vector<int>& nums) : nums(nums) {}
+
+    vector<int> solve()
+    {
+        stack<Frame> callStack;
+        callStack.push(Frame(0, nums.size() - 1));
+
+        while (!callStack.empty())
+        {
+            Frame& cur = callStack.top();
+
+            if (cur.s == 0)
+            {
+                if (cur.left >= cur.right) { callStack.pop(); continue; }
+                cur.mid = partition(cur.left, cur.right);
+                callStack.push(Frame(cur.left, cur.mid - 1));
+                cur.s = 1;
+            }
+            else if (cur.s == 1)
+            {
+                callStack.pop();
+                callStack.push(Frame(cur.mid + 1, cur.right));
+            }
+        }
+
+        return nums;
+    }
+
+private:
+    vector<int> nums;
+
+    struct Frame
+    {
+        int left, right;
+        int mid;
+        int s;
+        Frame(int left, int right)
+            : left(left), right(right), s(0), mid(0) {}
+    };
+
+    int partition(int left, int right)
+    {
+        int mid = left;
+        for (int i = left + 1; i <= right; ++i)
+        {
+            if (nums[i] > nums[left]) continue;
+            swap(nums[mid + 1], nums[i]);
+            mid++;
+        }
+        swap(nums[left], nums[mid]);
+        return mid;
+    }
+};
+
 class Solution
 {
 public:
     vector<int> sortArray(vector<int>& nums)
     {
         //return Solution1(nums).solve();
-        return Solution2(nums).solve();
+        //return Solution2(nums).solve();
+        return Solution3(nums).solve();
     }
 };
 
