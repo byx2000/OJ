@@ -295,6 +295,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "二叉搜索树的第k大�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "路径总和II", "LeetCode\路径总和II\路径总和II.vcxproj", "{1478652A-0F45-456C-B146-7E5E947521E4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "路径总和III", "LeetCode\路径总和III\路径总和III.vcxproj", "{32ACAD37-120E-421D-ADF3-29A0F06ED04B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1439,6 +1441,14 @@ Global
 		{1478652A-0F45-456C-B146-7E5E947521E4}.Release|x64.Build.0 = Release|x64
 		{1478652A-0F45-456C-B146-7E5E947521E4}.Release|x86.ActiveCfg = Release|Win32
 		{1478652A-0F45-456C-B146-7E5E947521E4}.Release|x86.Build.0 = Release|Win32
+		{32ACAD37-120E-421D-ADF3-29A0F06ED04B}.Debug|x64.ActiveCfg = Debug|x64
+		{32ACAD37-120E-421D-ADF3-29A0F06ED04B}.Debug|x64.Build.0 = Debug|x64
+		{32ACAD37-120E-421D-ADF3-29A0F06ED04B}.Debug|x86.ActiveCfg = Debug|Win32
+		{32ACAD37-120E-421D-ADF3-29A0F06ED04B}.Debug|x86.Build.0 = Debug|Win32
+		{32ACAD37-120E-421D-ADF3-29A0F06ED04B}.Release|x64.ActiveCfg = Release|x64
+		{32ACAD37-120E-421D-ADF3-29A0F06ED04B}.Release|x64.Build.0 = Release|x64
+		{32ACAD37-120E-421D-ADF3-29A0F06ED04B}.Release|x86.ActiveCfg = Release|Win32
+		{32ACAD37-120E-421D-ADF3-29A0F06ED04B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1586,6 +1596,7 @@ Global
 		{D0159BD7-315C-4414-8B0E-30F48D528AA0} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{2B24BB64-05B4-4D22-97E3-8C9D27048921} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{1478652A-0F45-456C-B146-7E5E947521E4} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{32ACAD37-120E-421D-ADF3-29A0F06ED04B} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
