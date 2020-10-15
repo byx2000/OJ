@@ -305,6 +305,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "后继者", "LeetCode\后�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "二叉树剪枝", "LeetCode\二叉树剪枝\二叉树剪枝.vcxproj", "{8CA0D91A-0C4B-4FE1-B751-330493A36C6D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "不同的二叉搜索树", "LeetCode\不同的二叉搜索树\不同的二叉搜索树.vcxproj", "{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1489,6 +1491,14 @@ Global
 		{8CA0D91A-0C4B-4FE1-B751-330493A36C6D}.Release|x64.Build.0 = Release|x64
 		{8CA0D91A-0C4B-4FE1-B751-330493A36C6D}.Release|x86.ActiveCfg = Release|Win32
 		{8CA0D91A-0C4B-4FE1-B751-330493A36C6D}.Release|x86.Build.0 = Release|Win32
+		{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB}.Debug|x64.ActiveCfg = Debug|x64
+		{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB}.Debug|x64.Build.0 = Debug|x64
+		{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB}.Debug|x86.ActiveCfg = Debug|Win32
+		{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB}.Debug|x86.Build.0 = Debug|Win32
+		{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB}.Release|x64.ActiveCfg = Release|x64
+		{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB}.Release|x64.Build.0 = Release|x64
+		{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB}.Release|x86.ActiveCfg = Release|Win32
+		{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1641,6 +1651,7 @@ Global
 		{C7ADD707-5A20-44E5-8C01-ACA98257FF7F} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{54A10F9C-B4F7-4544-8B04-C22517522F04} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{8CA0D91A-0C4B-4FE1-B751-330493A36C6D} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
