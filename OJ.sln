@@ -309,6 +309,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "不同的二叉搜索树", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "不同的二叉搜索树II", "LeetCode\不同的二叉搜索树II\不同的二叉搜索树II.vcxproj", "{408EFDF0-4609-4853-8D09-07BC78D63430}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "二叉树中的最长交错路径", "LeetCode\二叉树中的最长交错路径\二叉树中的最长交错路径.vcxproj", "{F1BDE71A-12F3-4B74-B4F9-44A6E659F66B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1509,6 +1511,14 @@ Global
 		{408EFDF0-4609-4853-8D09-07BC78D63430}.Release|x64.Build.0 = Release|x64
 		{408EFDF0-4609-4853-8D09-07BC78D63430}.Release|x86.ActiveCfg = Release|Win32
 		{408EFDF0-4609-4853-8D09-07BC78D63430}.Release|x86.Build.0 = Release|Win32
+		{F1BDE71A-12F3-4B74-B4F9-44A6E659F66B}.Debug|x64.ActiveCfg = Debug|x64
+		{F1BDE71A-12F3-4B74-B4F9-44A6E659F66B}.Debug|x64.Build.0 = Debug|x64
+		{F1BDE71A-12F3-4B74-B4F9-44A6E659F66B}.Debug|x86.ActiveCfg = Debug|Win32
+		{F1BDE71A-12F3-4B74-B4F9-44A6E659F66B}.Debug|x86.Build.0 = Debug|Win32
+		{F1BDE71A-12F3-4B74-B4F9-44A6E659F66B}.Release|x64.ActiveCfg = Release|x64
+		{F1BDE71A-12F3-4B74-B4F9-44A6E659F66B}.Release|x64.Build.0 = Release|x64
+		{F1BDE71A-12F3-4B74-B4F9-44A6E659F66B}.Release|x86.ActiveCfg = Release|Win32
+		{F1BDE71A-12F3-4B74-B4F9-44A6E659F66B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1663,6 +1673,7 @@ Global
 		{8CA0D91A-0C4B-4FE1-B751-330493A36C6D} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{DDB58354-4B30-43C4-9A8E-CB97A2CB1BEB} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{408EFDF0-4609-4853-8D09-07BC78D63430} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{F1BDE71A-12F3-4B74-B4F9-44A6E659F66B} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
