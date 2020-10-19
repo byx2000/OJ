@@ -319,6 +319,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "二叉树的直径", "LeetC
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最长同值路径", "LeetCode\最长同值路径\最长同值路径.vcxproj", "{1673EEAB-A8D1-444E-9AD4-7CFFDA1D18F6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "二叉树中的最大路径和", "LeetCode\二叉树中的最大路径和\二叉树中的最大路径和.vcxproj", "{090A1AFE-F80E-4535-BB97-6CD368AFC15E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1559,6 +1561,14 @@ Global
 		{1673EEAB-A8D1-444E-9AD4-7CFFDA1D18F6}.Release|x64.Build.0 = Release|x64
 		{1673EEAB-A8D1-444E-9AD4-7CFFDA1D18F6}.Release|x86.ActiveCfg = Release|Win32
 		{1673EEAB-A8D1-444E-9AD4-7CFFDA1D18F6}.Release|x86.Build.0 = Release|Win32
+		{090A1AFE-F80E-4535-BB97-6CD368AFC15E}.Debug|x64.ActiveCfg = Debug|x64
+		{090A1AFE-F80E-4535-BB97-6CD368AFC15E}.Debug|x64.Build.0 = Debug|x64
+		{090A1AFE-F80E-4535-BB97-6CD368AFC15E}.Debug|x86.ActiveCfg = Debug|Win32
+		{090A1AFE-F80E-4535-BB97-6CD368AFC15E}.Debug|x86.Build.0 = Debug|Win32
+		{090A1AFE-F80E-4535-BB97-6CD368AFC15E}.Release|x64.ActiveCfg = Release|x64
+		{090A1AFE-F80E-4535-BB97-6CD368AFC15E}.Release|x64.Build.0 = Release|x64
+		{090A1AFE-F80E-4535-BB97-6CD368AFC15E}.Release|x86.ActiveCfg = Release|Win32
+		{090A1AFE-F80E-4535-BB97-6CD368AFC15E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1718,6 +1728,7 @@ Global
 		{73C0DA33-13B2-4580-922B-2626A7AD56C1} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{9AFA2D34-AB16-4EC3-95F0-49385967835E} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{1673EEAB-A8D1-444E-9AD4-7CFFDA1D18F6} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{090A1AFE-F80E-4535-BB97-6CD368AFC15E} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
