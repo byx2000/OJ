@@ -17,6 +17,7 @@
 #include <set>
 #include <stack>
 #include <queue>
+#include <unordered_set>
 #include <cassert>
 
 using namespace std;
