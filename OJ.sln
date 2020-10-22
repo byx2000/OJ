@@ -329,6 +329,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "检查子树", "LeetCode\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "祖父节点值为偶数的节点和", "LeetCode\祖父节点值为偶数的节点和\祖父节点值为偶数的节点和.vcxproj", "{CCD60A93-A59A-415A-A99C-0104E50FEEBD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "所有可能的满二叉树", "LeetCode\所有可能的满二叉树\所有可能的满二叉树.vcxproj", "{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1609,6 +1611,14 @@ Global
 		{CCD60A93-A59A-415A-A99C-0104E50FEEBD}.Release|x64.Build.0 = Release|x64
 		{CCD60A93-A59A-415A-A99C-0104E50FEEBD}.Release|x86.ActiveCfg = Release|Win32
 		{CCD60A93-A59A-415A-A99C-0104E50FEEBD}.Release|x86.Build.0 = Release|Win32
+		{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53}.Debug|x64.ActiveCfg = Debug|x64
+		{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53}.Debug|x64.Build.0 = Debug|x64
+		{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53}.Debug|x86.ActiveCfg = Debug|Win32
+		{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53}.Debug|x86.Build.0 = Debug|Win32
+		{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53}.Release|x64.ActiveCfg = Release|x64
+		{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53}.Release|x64.Build.0 = Release|x64
+		{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53}.Release|x86.ActiveCfg = Release|Win32
+		{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1773,6 +1783,7 @@ Global
 		{0637E364-95E9-4C81-973A-550A7E9EB6F9} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{3481D96F-2E23-45D9-84FA-7697D77E2BC1} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{CCD60A93-A59A-415A-A99C-0104E50FEEBD} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
