@@ -333,6 +333,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "所有可能的满二叉树
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "层数最深叶子节点的和", "LeetCode\层数最深叶子节点的和\层数最深叶子节点的和.vcxproj", "{5A14641A-0A2C-47E4-B3F0-E640A36F4B9C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "左叶子之和", "LeetCode\左叶子之和\左叶子之和.vcxproj", "{087E2840-3D59-4F73-8CC5-ACA388CA5997}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1629,6 +1631,14 @@ Global
 		{5A14641A-0A2C-47E4-B3F0-E640A36F4B9C}.Release|x64.Build.0 = Release|x64
 		{5A14641A-0A2C-47E4-B3F0-E640A36F4B9C}.Release|x86.ActiveCfg = Release|Win32
 		{5A14641A-0A2C-47E4-B3F0-E640A36F4B9C}.Release|x86.Build.0 = Release|Win32
+		{087E2840-3D59-4F73-8CC5-ACA388CA5997}.Debug|x64.ActiveCfg = Debug|x64
+		{087E2840-3D59-4F73-8CC5-ACA388CA5997}.Debug|x64.Build.0 = Debug|x64
+		{087E2840-3D59-4F73-8CC5-ACA388CA5997}.Debug|x86.ActiveCfg = Debug|Win32
+		{087E2840-3D59-4F73-8CC5-ACA388CA5997}.Debug|x86.Build.0 = Debug|Win32
+		{087E2840-3D59-4F73-8CC5-ACA388CA5997}.Release|x64.ActiveCfg = Release|x64
+		{087E2840-3D59-4F73-8CC5-ACA388CA5997}.Release|x64.Build.0 = Release|x64
+		{087E2840-3D59-4F73-8CC5-ACA388CA5997}.Release|x86.ActiveCfg = Release|Win32
+		{087E2840-3D59-4F73-8CC5-ACA388CA5997}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1795,6 +1805,7 @@ Global
 		{CCD60A93-A59A-415A-A99C-0104E50FEEBD} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{BE94C1EC-A09E-4D62-968F-9C7E2E22EA53} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{5A14641A-0A2C-47E4-B3F0-E640A36F4B9C} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{087E2840-3D59-4F73-8CC5-ACA388CA5997} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
