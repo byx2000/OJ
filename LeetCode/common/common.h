@@ -260,4 +260,33 @@ void test(T(C::* func)(T1, T2, T3), const Cases<T4, T5, T6, T>& cases, bool(*cmp
 	}
 }
 
+// 链表相关数据结构
+
+struct ListNode 
+{
+	int val;
+	ListNode* next;
+	ListNode(int x) : val(x), next(NULL) {}
+};
+
+ListNode* BuildList(const vector<int>& list)
+{
+	if (list.empty()) return NULL;
+	ListNode* head = new ListNode(list[0]);
+	ListNode* p = head;
+	for (int i = 1; i < (int)list.size(); ++i)
+	{
+		p->next = new ListNode(list[i]);
+		p = p->next;
+	}
+	return head;
+}
+
+bool ListEqual(ListNode* a, ListNode* b)
+{
+	if (a == NULL) return b == NULL;
+	if (b == NULL) return a == NULL;
+	return (a->val == b->val) && ListEqual(a->next, b->next);
+}
+
 #endif

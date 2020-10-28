@@ -130,5 +130,23 @@ int main()
 	assert(TreeEqual(t1, t2));
 	assert(!TreeEqual(t1, t3));
 
+	ListNode* list = BuildList({ 1, 2, 3 });
+	assert(list->val == 1);
+	assert(list->next->val == 2);
+	assert(list->next->next->val == 3);
+	assert(list->next->next->next == NULL);
+
+	list = BuildList({});
+	assert(list == NULL);
+
+	ListNode* a = BuildList({ 1, 2, 3 });
+	ListNode* b = BuildList({ 1, 2, 3 });
+	ListNode* c = BuildList({ 3, 2, 1 });
+	assert(ListEqual(a, b));
+	assert(!ListEqual(a, c));
+	assert(!ListEqual(a, NULL));
+	assert(!ListEqual(NULL, c));
+	assert(ListEqual(NULL, NULL));
+
 	return 0;
 }
