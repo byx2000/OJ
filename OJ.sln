@@ -345,6 +345,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "反转链表", "LeetCode\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "合并两个排序的链表", "LeetCode\合并两个排序的链表\合并两个排序的链表.vcxproj", "{6EE06429-07AF-4457-AE7B-97E506094B79}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "移除链表元素", "LeetCode\移除链表元素\移除链表元素.vcxproj", "{C8A3547B-1FC9-4870-ADE1-AA4B8E5F50B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1689,6 +1691,14 @@ Global
 		{6EE06429-07AF-4457-AE7B-97E506094B79}.Release|x64.Build.0 = Release|x64
 		{6EE06429-07AF-4457-AE7B-97E506094B79}.Release|x86.ActiveCfg = Release|Win32
 		{6EE06429-07AF-4457-AE7B-97E506094B79}.Release|x86.Build.0 = Release|Win32
+		{C8A3547B-1FC9-4870-ADE1-AA4B8E5F50B2}.Debug|x64.ActiveCfg = Debug|x64
+		{C8A3547B-1FC9-4870-ADE1-AA4B8E5F50B2}.Debug|x64.Build.0 = Debug|x64
+		{C8A3547B-1FC9-4870-ADE1-AA4B8E5F50B2}.Debug|x86.ActiveCfg = Debug|Win32
+		{C8A3547B-1FC9-4870-ADE1-AA4B8E5F50B2}.Debug|x86.Build.0 = Debug|Win32
+		{C8A3547B-1FC9-4870-ADE1-AA4B8E5F50B2}.Release|x64.ActiveCfg = Release|x64
+		{C8A3547B-1FC9-4870-ADE1-AA4B8E5F50B2}.Release|x64.Build.0 = Release|x64
+		{C8A3547B-1FC9-4870-ADE1-AA4B8E5F50B2}.Release|x86.ActiveCfg = Release|Win32
+		{C8A3547B-1FC9-4870-ADE1-AA4B8E5F50B2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1861,6 +1871,7 @@ Global
 		{4ADD0208-831F-4CB8-9C9B-D180BE2448A9} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{422E1D57-8D8C-43F2-BD4E-985F13DFD153} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{6EE06429-07AF-4457-AE7B-97E506094B79} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{C8A3547B-1FC9-4870-ADE1-AA4B8E5F50B2} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
