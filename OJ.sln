@@ -355,6 +355,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "环形链表", "LeetCode\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "从尾到头打印链表", "LeetCode\从尾到头打印链表\从尾到头打印链表.vcxproj", "{B7E04ABC-633E-4268-91A2-47C2F50629D8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表的中间结点", "LeetCode\链表的中间结点\链表的中间结点.vcxproj", "{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1739,6 +1741,14 @@ Global
 		{B7E04ABC-633E-4268-91A2-47C2F50629D8}.Release|x64.Build.0 = Release|x64
 		{B7E04ABC-633E-4268-91A2-47C2F50629D8}.Release|x86.ActiveCfg = Release|Win32
 		{B7E04ABC-633E-4268-91A2-47C2F50629D8}.Release|x86.Build.0 = Release|Win32
+		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Debug|x64.ActiveCfg = Debug|x64
+		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Debug|x64.Build.0 = Debug|x64
+		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Debug|x86.ActiveCfg = Debug|Win32
+		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Debug|x86.Build.0 = Debug|Win32
+		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Release|x64.ActiveCfg = Release|x64
+		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Release|x64.Build.0 = Release|x64
+		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Release|x86.ActiveCfg = Release|Win32
+		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1916,6 +1926,7 @@ Global
 		{0DAFA27D-F174-40FF-8820-6AB42ABFB51D} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{D96D092B-CFFA-438E-8F0A-546FC3B78B07} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{B7E04ABC-633E-4268-91A2-47C2F50629D8} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
