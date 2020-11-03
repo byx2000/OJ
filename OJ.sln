@@ -357,6 +357,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "从尾到头打印链表", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表的中间结点", "LeetCode\链表的中间结点\链表的中间结点.vcxproj", "{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "删除排序链表中的重复元素", "LeetCode\删除排序链表中的重复元素\删除排序链表中的重复元素.vcxproj", "{9D97609B-2DBB-410E-9489-CAA724892252}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1749,6 +1751,14 @@ Global
 		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Release|x64.Build.0 = Release|x64
 		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Release|x86.ActiveCfg = Release|Win32
 		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700}.Release|x86.Build.0 = Release|Win32
+		{9D97609B-2DBB-410E-9489-CAA724892252}.Debug|x64.ActiveCfg = Debug|x64
+		{9D97609B-2DBB-410E-9489-CAA724892252}.Debug|x64.Build.0 = Debug|x64
+		{9D97609B-2DBB-410E-9489-CAA724892252}.Debug|x86.ActiveCfg = Debug|Win32
+		{9D97609B-2DBB-410E-9489-CAA724892252}.Debug|x86.Build.0 = Debug|Win32
+		{9D97609B-2DBB-410E-9489-CAA724892252}.Release|x64.ActiveCfg = Release|x64
+		{9D97609B-2DBB-410E-9489-CAA724892252}.Release|x64.Build.0 = Release|x64
+		{9D97609B-2DBB-410E-9489-CAA724892252}.Release|x86.ActiveCfg = Release|Win32
+		{9D97609B-2DBB-410E-9489-CAA724892252}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1927,6 +1937,7 @@ Global
 		{D96D092B-CFFA-438E-8F0A-546FC3B78B07} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{B7E04ABC-633E-4268-91A2-47C2F50629D8} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{A2E2D27D-6CAC-462C-8CD5-DE02288FE700} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{9D97609B-2DBB-410E-9489-CAA724892252} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
