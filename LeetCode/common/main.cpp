@@ -148,5 +148,9 @@ int main()
 	assert(!ListEqual(NULL, c));
 	assert(ListEqual(NULL, NULL));
 
+	cout << a << endl;
+	cout << c << endl;
+	cout << BuildList({}) << endl;
+
 	return 0;
 }

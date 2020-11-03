@@ -289,4 +289,16 @@ bool ListEqual(ListNode* a, ListNode* b)
 	return (a->val == b->val) && ListEqual(a->next, b->next);
 }
 
+ostream& operator<<(ostream& out, ListNode* p)
+{
+	vector<int> v;
+	while (p != NULL)
+	{
+		v.push_back(p->val);
+		p = p->next;
+	}
+	out << v;
+	return out;
+}
+
 #endif
