@@ -363,6 +363,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "删除排序链表中的重
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "移除重复节点", "LeetCode\移除重复节点\移除重复节点.vcxproj", "{ABC7896F-3902-48AC-B804-87102E9ECC9A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "返回倒数第k个节点", "LeetCode\返回倒数第k个节点\返回倒数第k个节点.vcxproj", "{1D120691-B327-4540-AE51-139792B438F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1779,6 +1781,14 @@ Global
 		{ABC7896F-3902-48AC-B804-87102E9ECC9A}.Release|x64.Build.0 = Release|x64
 		{ABC7896F-3902-48AC-B804-87102E9ECC9A}.Release|x86.ActiveCfg = Release|Win32
 		{ABC7896F-3902-48AC-B804-87102E9ECC9A}.Release|x86.Build.0 = Release|Win32
+		{1D120691-B327-4540-AE51-139792B438F4}.Debug|x64.ActiveCfg = Debug|x64
+		{1D120691-B327-4540-AE51-139792B438F4}.Debug|x64.Build.0 = Debug|x64
+		{1D120691-B327-4540-AE51-139792B438F4}.Debug|x86.ActiveCfg = Debug|Win32
+		{1D120691-B327-4540-AE51-139792B438F4}.Debug|x86.Build.0 = Debug|Win32
+		{1D120691-B327-4540-AE51-139792B438F4}.Release|x64.ActiveCfg = Release|x64
+		{1D120691-B327-4540-AE51-139792B438F4}.Release|x64.Build.0 = Release|x64
+		{1D120691-B327-4540-AE51-139792B438F4}.Release|x86.ActiveCfg = Release|Win32
+		{1D120691-B327-4540-AE51-139792B438F4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1960,6 +1970,7 @@ Global
 		{9D97609B-2DBB-410E-9489-CAA724892252} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{34ACCF36-5548-4F3D-9A4F-E2D4E11BEC74} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{ABC7896F-3902-48AC-B804-87102E9ECC9A} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{1D120691-B327-4540-AE51-139792B438F4} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
