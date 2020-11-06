@@ -57,23 +57,72 @@ private:
     int target;
 };
 
+// 解法3：万能方法
+class Solution3
+{
+public:
+    Solution3(const vector<int>& nums, int target)
+        : nums(nums), target(target) {}
+
+    int solve()
+    {
+        int low = 0, high = nums.size() - 1;
+        while (high - low > 3) // 当区间长度小于3时，退出循环，防止在区间长度过小时出现死循环
+        {
+            int mid = (low + high) / 2;
+            if (nums[mid] == target)
+            {
+                return mid;
+            }
+            else if (nums[mid] < target)
+            {
+                low = mid; // 即使此处的边界条件有误，仍能返回正确结果
+            }
+            else
+            {
+                high = mid;
+            }
+        }
+
+        for (int i = low; i <= high; ++i)
+        {
+            if (nums[i] == target) return i;
+        }
+
+        return -1;
+    }
+
+private:
+    vector<int> nums;
+    int target;
+};
+
 class Solution
 {
 public:
     int search(vector<int>& nums, int target)
     {
         //return Solution1(nums, target).solve();
-        return Solution2(nums, target).solve();
+        //return Solution2(nums, target).solve();
+        return Solution3(nums, target).solve();
     }
 };
 
 int main()
 {
-    vector<int> nums{ -1,0,3,5,9,12 };
-    TEST(Assert::areEqual(Solution().search(nums, 9), 4));
+    Cases<vector<int>, int, int> cases
+    {
+        {{}, 1, -1},
+        {{1}, 1, 0},
+        {{1}, 2, -1},
+        {{1,2}, 1, 0},
+        {{1,2}, 2, 1},
+        {{1,2}, 3, -1},
+        {{-1,0,3,5,9,12}, 9, 4},
+        {{-1,0,3,5,9,12}, 2, -1},
+    };
 
-    nums = vector<int>{ -1,0,3,5,9,12 };
-    TEST(Assert::areEqual(Solution().search(nums, 2), -1));
+    test(&Solution::search, cases);
 
 	return 0;
 }
