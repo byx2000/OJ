@@ -369,6 +369,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "排序链表", "LeetCode\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "在排序数组中查找元素的第一个和最后一个位置", "LeetCode\在排序数组中查找元素的第一个和最后一个位置\在排序数组中查找元素的第一个和最后一个位置.vcxproj", "{F93E0A3D-B331-49A7-9032-5D2C8B9BB44A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "第一个错误的版本", "LeetCode\第一个错误的版本\第一个错误的版本.vcxproj", "{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1809,6 +1811,14 @@ Global
 		{F93E0A3D-B331-49A7-9032-5D2C8B9BB44A}.Release|x64.Build.0 = Release|x64
 		{F93E0A3D-B331-49A7-9032-5D2C8B9BB44A}.Release|x86.ActiveCfg = Release|Win32
 		{F93E0A3D-B331-49A7-9032-5D2C8B9BB44A}.Release|x86.Build.0 = Release|Win32
+		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392}.Debug|x64.ActiveCfg = Debug|x64
+		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392}.Debug|x64.Build.0 = Debug|x64
+		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392}.Debug|x86.ActiveCfg = Debug|Win32
+		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392}.Debug|x86.Build.0 = Debug|Win32
+		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392}.Release|x64.ActiveCfg = Release|x64
+		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392}.Release|x64.Build.0 = Release|x64
+		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392}.Release|x86.ActiveCfg = Release|Win32
+		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1993,6 +2003,7 @@ Global
 		{1D120691-B327-4540-AE51-139792B438F4} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{311D8382-980D-4EEC-9BED-6BC682BADD48} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{F93E0A3D-B331-49A7-9032-5D2C8B9BB44A} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
