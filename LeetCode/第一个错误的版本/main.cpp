@@ -13,7 +13,7 @@ public:
 
         while (high - low > 3)
         {
-            int mid = low + (high - low) / 2;
+            int mid = low + (high - low) / 2; // 此处不能写 int mid = (low + high) / 2 ，为防止溢出
             if (isBadVersion(mid)) high = mid;
             else low = mid + 1;
         }
