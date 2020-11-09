@@ -373,6 +373,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "第一个错误的版本", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "搜索插入位置", "LeetCode\搜索插入位置\搜索插入位置.vcxproj", "{79A5D51B-F0AE-479A-903F-DEB3D1439D03}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "在排序数组中查找数字I", "LeetCode\在排序数组中查找数字I\在排序数组中查找数字I.vcxproj", "{F5073505-2DF3-47C8-B54E-D29D1338C57A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1829,6 +1831,14 @@ Global
 		{79A5D51B-F0AE-479A-903F-DEB3D1439D03}.Release|x64.Build.0 = Release|x64
 		{79A5D51B-F0AE-479A-903F-DEB3D1439D03}.Release|x86.ActiveCfg = Release|Win32
 		{79A5D51B-F0AE-479A-903F-DEB3D1439D03}.Release|x86.Build.0 = Release|Win32
+		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Debug|x64.ActiveCfg = Debug|x64
+		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Debug|x64.Build.0 = Debug|x64
+		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Debug|x86.ActiveCfg = Debug|Win32
+		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Debug|x86.Build.0 = Debug|Win32
+		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Release|x64.ActiveCfg = Release|x64
+		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Release|x64.Build.0 = Release|x64
+		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Release|x86.ActiveCfg = Release|Win32
+		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2015,6 +2025,7 @@ Global
 		{F93E0A3D-B331-49A7-9032-5D2C8B9BB44A} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{79A5D51B-F0AE-479A-903F-DEB3D1439D03} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{F5073505-2DF3-47C8-B54E-D29D1338C57A} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
