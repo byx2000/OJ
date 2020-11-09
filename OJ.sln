@@ -375,6 +375,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "搜索插入位置", "LeetC
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "在排序数组中查找数字I", "LeetCode\在排序数组中查找数字I\在排序数组中查找数字I.vcxproj", "{F5073505-2DF3-47C8-B54E-D29D1338C57A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "山脉数组的峰顶索引", "LeetCode\山脉数组的峰顶索引\山脉数组的峰顶索引.vcxproj", "{7AE8D657-1318-430E-AD60-AC074B0611FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1839,6 +1841,14 @@ Global
 		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Release|x64.Build.0 = Release|x64
 		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Release|x86.ActiveCfg = Release|Win32
 		{F5073505-2DF3-47C8-B54E-D29D1338C57A}.Release|x86.Build.0 = Release|Win32
+		{7AE8D657-1318-430E-AD60-AC074B0611FB}.Debug|x64.ActiveCfg = Debug|x64
+		{7AE8D657-1318-430E-AD60-AC074B0611FB}.Debug|x64.Build.0 = Debug|x64
+		{7AE8D657-1318-430E-AD60-AC074B0611FB}.Debug|x86.ActiveCfg = Debug|Win32
+		{7AE8D657-1318-430E-AD60-AC074B0611FB}.Debug|x86.Build.0 = Debug|Win32
+		{7AE8D657-1318-430E-AD60-AC074B0611FB}.Release|x64.ActiveCfg = Release|x64
+		{7AE8D657-1318-430E-AD60-AC074B0611FB}.Release|x64.Build.0 = Release|x64
+		{7AE8D657-1318-430E-AD60-AC074B0611FB}.Release|x86.ActiveCfg = Release|Win32
+		{7AE8D657-1318-430E-AD60-AC074B0611FB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2026,6 +2036,7 @@ Global
 		{959C6CAC-8C4B-46CE-A6C0-A59D3BDD1392} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{79A5D51B-F0AE-479A-903F-DEB3D1439D03} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{F5073505-2DF3-47C8-B54E-D29D1338C57A} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{7AE8D657-1318-430E-AD60-AC074B0611FB} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
