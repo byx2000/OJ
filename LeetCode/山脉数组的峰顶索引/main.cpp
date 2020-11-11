@@ -31,12 +31,43 @@ private:
     vector<int> nums;
 };
 
+// Èý·Ö·¨
+class Solution2
+{
+public:
+    Solution2(const vector<int>& nums) : nums(nums) {}
+
+    int solve()
+    {
+        int low = 0, high = nums.size() - 1;
+
+        while (high - low > 3)
+        {
+            int mid1 = low + (high - low) / 3;
+            int mid2 = high - (high - low) / 3;
+            if (nums[mid1] < nums[mid2]) low = mid1;
+            else high = mid2;
+        }
+
+        for (int i = low + 1; i <= high; ++i)
+        {
+            if (nums[i] < nums[i - 1]) return i - 1;
+        }
+
+        return high;
+    }
+
+private:
+    vector<int> nums;
+};
+
 class Solution 
 {
 public:
     int peakIndexInMountainArray(vector<int>& nums) 
     {
-        return Solution1(nums).solve();
+        //return Solution1(nums).solve();
+        return Solution2(nums).solve();
     }
 };
 
