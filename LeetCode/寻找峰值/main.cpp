@@ -2,10 +2,13 @@
 
 #include "../common/common.h"
 
-class Solution 
+// 二分法
+class Solution1
 {
 public:
-    int findPeakElement(vector<int>& nums) 
+    Solution1(const vector<int>& nums) : nums(nums) {}
+
+    int solve()
     {
         int left = 0, right = nums.size() - 1;
 
@@ -19,12 +22,55 @@ public:
             else right = mid;
         }
 
-        for (int i = left + 1; i <= right; ++i)
+        for (int i = left + 1; i <= right - 1; ++i)
         {
-            if (nums[i] < nums[i - 1]) return i - 1;
+            if (nums[i - 1] < nums[i] && nums[i] > nums[i + 1]) return i;
         }
 
-        return right;
+        return (nums[left] > nums[right]) ? left : right;
+    }
+
+private:
+    vector<int> nums;
+};
+
+// 三分法
+class Solution2
+{
+public:
+    Solution2(const vector<int>& nums) : nums(nums) {}
+
+    int solve()
+    {
+        int left = 0, right = nums.size() - 1;
+
+        while (right - left > 3)
+        {
+            int mid1 = left + (right - left) / 3;
+            int mid2 = right - (right - left) / 3;
+            if (nums[mid1] < nums[mid2]) left = mid1;
+            else right = mid2;
+        }
+
+        for (int i = left + 1; i <= right - 1; ++i)
+        {
+            if (nums[i - 1] < nums[i] && nums[i] > nums[i + 1]) return i;
+        }
+
+        return (nums[left] > nums[right]) ? left : right;
+    }
+
+private:
+    vector<int> nums;
+};
+
+class Solution 
+{
+public:
+    int findPeakElement(vector<int>& nums) 
+    {
+        //return Solution1(nums).solve();
+        return Solution2(nums).solve();
     }
 };
 
