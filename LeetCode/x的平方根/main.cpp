@@ -1,6 +1,6 @@
 #include "../common/common.h"
 
-// 二分法
+// 二分法 
 class Solution 
 {
 public:
