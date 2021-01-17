@@ -385,6 +385,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x的平方根", "LeetCode\x
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "旋转数组的最小数字", "LeetCode\旋转数组的最小数字\旋转数组的最小数字.vcxproj", "{4D2582E4-69C2-4BE5-B257-A2CC9354C0AB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "找出给定方程的正整数解", "LeetCode\找出给定方程的正整数解\找出给定方程的正整数解.vcxproj", "{06C8FA7F-8048-4A58-943F-99CE4FC70CBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1889,6 +1891,14 @@ Global
 		{4D2582E4-69C2-4BE5-B257-A2CC9354C0AB}.Release|x64.Build.0 = Release|x64
 		{4D2582E4-69C2-4BE5-B257-A2CC9354C0AB}.Release|x86.ActiveCfg = Release|Win32
 		{4D2582E4-69C2-4BE5-B257-A2CC9354C0AB}.Release|x86.Build.0 = Release|Win32
+		{06C8FA7F-8048-4A58-943F-99CE4FC70CBD}.Debug|x64.ActiveCfg = Debug|x64
+		{06C8FA7F-8048-4A58-943F-99CE4FC70CBD}.Debug|x64.Build.0 = Debug|x64
+		{06C8FA7F-8048-4A58-943F-99CE4FC70CBD}.Debug|x86.ActiveCfg = Debug|Win32
+		{06C8FA7F-8048-4A58-943F-99CE4FC70CBD}.Debug|x86.Build.0 = Debug|Win32
+		{06C8FA7F-8048-4A58-943F-99CE4FC70CBD}.Release|x64.ActiveCfg = Release|x64
+		{06C8FA7F-8048-4A58-943F-99CE4FC70CBD}.Release|x64.Build.0 = Release|x64
+		{06C8FA7F-8048-4A58-943F-99CE4FC70CBD}.Release|x86.ActiveCfg = Release|Win32
+		{06C8FA7F-8048-4A58-943F-99CE4FC70CBD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2081,6 +2091,7 @@ Global
 		{D60DA978-B4A6-4BAB-90BD-0F65A5FBAD1D} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{CBFBDB00-55F1-4457-99F5-4319499CF03C} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{4D2582E4-69C2-4BE5-B257-A2CC9354C0AB} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{06C8FA7F-8048-4A58-943F-99CE4FC70CBD} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
