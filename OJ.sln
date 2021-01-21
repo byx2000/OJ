@@ -389,6 +389,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "找出给定方程的正整
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "稀疏数组搜索", "LeetCode\稀疏数组搜索\稀疏数组搜索.vcxproj", "{11FF9A35-938F-4D47-BB75-A3F4E3837326}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "统计有序矩阵中的负数", "LeetCode\统计有序矩阵中的负数\统计有序矩阵中的负数.vcxproj", "{11A609A7-1005-498E-A4CB-98F5CBC744D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1909,6 +1911,14 @@ Global
 		{11FF9A35-938F-4D47-BB75-A3F4E3837326}.Release|x64.Build.0 = Release|x64
 		{11FF9A35-938F-4D47-BB75-A3F4E3837326}.Release|x86.ActiveCfg = Release|Win32
 		{11FF9A35-938F-4D47-BB75-A3F4E3837326}.Release|x86.Build.0 = Release|Win32
+		{11A609A7-1005-498E-A4CB-98F5CBC744D1}.Debug|x64.ActiveCfg = Debug|x64
+		{11A609A7-1005-498E-A4CB-98F5CBC744D1}.Debug|x64.Build.0 = Debug|x64
+		{11A609A7-1005-498E-A4CB-98F5CBC744D1}.Debug|x86.ActiveCfg = Debug|Win32
+		{11A609A7-1005-498E-A4CB-98F5CBC744D1}.Debug|x86.Build.0 = Debug|Win32
+		{11A609A7-1005-498E-A4CB-98F5CBC744D1}.Release|x64.ActiveCfg = Release|x64
+		{11A609A7-1005-498E-A4CB-98F5CBC744D1}.Release|x64.Build.0 = Release|x64
+		{11A609A7-1005-498E-A4CB-98F5CBC744D1}.Release|x86.ActiveCfg = Release|Win32
+		{11A609A7-1005-498E-A4CB-98F5CBC744D1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2103,6 +2113,7 @@ Global
 		{4D2582E4-69C2-4BE5-B257-A2CC9354C0AB} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{06C8FA7F-8048-4A58-943F-99CE4FC70CBD} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{11FF9A35-938F-4D47-BB75-A3F4E3837326} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{11A609A7-1005-498E-A4CB-98F5CBC744D1} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
