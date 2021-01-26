@@ -397,6 +397,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "搜索二维矩阵", "LeetC
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "有序数组中的单一元素", "LeetCode\有序数组中的单一元素\有序数组中的单一元素.vcxproj", "{9F2FD798-2CD2-4B87-B5AF-2BF79EC46BAB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "排序矩阵查找", "LeetCode\排序矩阵查找\排序矩阵查找.vcxproj", "{10E651DB-64E0-4E06-B0A0-F5492F2D47AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1949,6 +1951,14 @@ Global
 		{9F2FD798-2CD2-4B87-B5AF-2BF79EC46BAB}.Release|x64.Build.0 = Release|x64
 		{9F2FD798-2CD2-4B87-B5AF-2BF79EC46BAB}.Release|x86.ActiveCfg = Release|Win32
 		{9F2FD798-2CD2-4B87-B5AF-2BF79EC46BAB}.Release|x86.Build.0 = Release|Win32
+		{10E651DB-64E0-4E06-B0A0-F5492F2D47AD}.Debug|x64.ActiveCfg = Debug|x64
+		{10E651DB-64E0-4E06-B0A0-F5492F2D47AD}.Debug|x64.Build.0 = Debug|x64
+		{10E651DB-64E0-4E06-B0A0-F5492F2D47AD}.Debug|x86.ActiveCfg = Debug|Win32
+		{10E651DB-64E0-4E06-B0A0-F5492F2D47AD}.Debug|x86.Build.0 = Debug|Win32
+		{10E651DB-64E0-4E06-B0A0-F5492F2D47AD}.Release|x64.ActiveCfg = Release|x64
+		{10E651DB-64E0-4E06-B0A0-F5492F2D47AD}.Release|x64.Build.0 = Release|x64
+		{10E651DB-64E0-4E06-B0A0-F5492F2D47AD}.Release|x86.ActiveCfg = Release|Win32
+		{10E651DB-64E0-4E06-B0A0-F5492F2D47AD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2147,6 +2157,7 @@ Global
 		{881E0F4B-2F1D-4382-944B-3A921BE9CF05} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{B5049F3D-3CE8-4E61-B853-D8348FD9F86B} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{9F2FD798-2CD2-4B87-B5AF-2BF79EC46BAB} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{10E651DB-64E0-4E06-B0A0-F5492F2D47AD} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
