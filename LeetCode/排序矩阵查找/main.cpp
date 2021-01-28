@@ -7,6 +7,14 @@ class Solution
 public:
     bool searchMatrix(vector<vector<int>>& mat, int target) 
     {
+        //return solve1(mat, target);
+        return solve2(mat, target);
+    }
+
+private:
+    // 解法1
+    bool solve1(vector<vector<int>>& mat, int target)
+    {
         for (int i = 0; i < (int)mat.size(); ++i)
         {
             int left = 0, right = mat[i].size() - 1;
@@ -24,6 +32,19 @@ public:
             }
         }
 
+        return false;
+    }
+
+    // 解法2
+    bool solve2(vector<vector<int>>& mat, int target)
+    {
+        int i = mat.size() - 1, j = 0;
+        while (i >= 0 && j < (int)mat[0].size())
+        {
+            if (mat[i][j] == target) return true;
+            else if (mat[i][j] < target) j++;
+            else i--;
+        }
         return false;
     }
 };
