@@ -403,6 +403,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "搜索旋转排序数组II"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "滑动窗口的最大值", "LeetCode\滑动窗口的最大值\滑动窗口的最大值.vcxproj", "{4E86354C-1108-4979-BEF0-7CED7574DBC2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "定长子串中元音的最大数目", "LeetCode\定长子串中元音的最大数目\定长子串中元音的最大数目.vcxproj", "{2B17530A-4A8D-4929-B837-B63AB28D2775}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1979,6 +1981,14 @@ Global
 		{4E86354C-1108-4979-BEF0-7CED7574DBC2}.Release|x64.Build.0 = Release|x64
 		{4E86354C-1108-4979-BEF0-7CED7574DBC2}.Release|x86.ActiveCfg = Release|Win32
 		{4E86354C-1108-4979-BEF0-7CED7574DBC2}.Release|x86.Build.0 = Release|Win32
+		{2B17530A-4A8D-4929-B837-B63AB28D2775}.Debug|x64.ActiveCfg = Debug|x64
+		{2B17530A-4A8D-4929-B837-B63AB28D2775}.Debug|x64.Build.0 = Debug|x64
+		{2B17530A-4A8D-4929-B837-B63AB28D2775}.Debug|x86.ActiveCfg = Debug|Win32
+		{2B17530A-4A8D-4929-B837-B63AB28D2775}.Debug|x86.Build.0 = Debug|Win32
+		{2B17530A-4A8D-4929-B837-B63AB28D2775}.Release|x64.ActiveCfg = Release|x64
+		{2B17530A-4A8D-4929-B837-B63AB28D2775}.Release|x64.Build.0 = Release|x64
+		{2B17530A-4A8D-4929-B837-B63AB28D2775}.Release|x86.ActiveCfg = Release|Win32
+		{2B17530A-4A8D-4929-B837-B63AB28D2775}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2180,6 +2190,7 @@ Global
 		{10E651DB-64E0-4E06-B0A0-F5492F2D47AD} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{718ABEE0-4640-48D5-8062-B2A61490DC72} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{4E86354C-1108-4979-BEF0-7CED7574DBC2} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{2B17530A-4A8D-4929-B837-B63AB28D2775} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
