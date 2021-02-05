@@ -8,7 +8,8 @@ public:
     int lengthOfLongestSubstring(string s) 
     {
         //return solution1(s);
-        return solution2(s);
+        //return solution2(s);
+        return solution3(s);
     }
 
 private:
@@ -54,6 +55,37 @@ private:
         }
         return maxLen;
     }
+
+    // 滑动窗口
+    int solution3(const string& s)
+    {
+        int left = 0, right = 0;
+        int maxLen = s.empty() ? 0 : 1;
+        vector<bool> table(256, false);
+
+        while (right < (int)s.size())
+        {
+            if (!table[s[right]])
+            {
+                table[s[right]] = true;
+            }
+            else
+            {
+                while (true)
+                {
+                    if (s[left] == s[right]) break;
+                    table[s[left]] = false;
+                    left++;
+                }
+                left++;
+            }
+            // 此处的不变式：s[left]~s[right]无重复字符
+            maxLen = max(maxLen, right - left + 1);
+            right++;
+        }
+
+        return maxLen;
+    }
 };
 
 int main()
@@ -61,6 +93,8 @@ int main()
     Cases<string, int> cases
     {
         {"", 0},
+        {"a", 1},
+        {"ab", 2},
         {"abcabcbb", 3},
         {"bbbbb", 1},
         {"pwwkew", 3},
