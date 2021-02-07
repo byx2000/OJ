@@ -409,6 +409,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最长不含重复字符的
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最大连续1的个数III", "LeetCode\最大连续1的个数III\最大连续1的个数III.vcxproj", "{CF0940E1-C7CC-4B54-BF54-DB735CD60ED4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "删掉一个元素以后全为1的最长子数组", "LeetCode\删掉一个元素以后全为1的最长子数组\删掉一个元素以后全为1的最长子数组.vcxproj", "{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -2009,6 +2011,14 @@ Global
 		{CF0940E1-C7CC-4B54-BF54-DB735CD60ED4}.Release|x64.Build.0 = Release|x64
 		{CF0940E1-C7CC-4B54-BF54-DB735CD60ED4}.Release|x86.ActiveCfg = Release|Win32
 		{CF0940E1-C7CC-4B54-BF54-DB735CD60ED4}.Release|x86.Build.0 = Release|Win32
+		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Debug|x64.ActiveCfg = Debug|x64
+		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Debug|x64.Build.0 = Debug|x64
+		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Debug|x86.Build.0 = Debug|Win32
+		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Release|x64.ActiveCfg = Release|x64
+		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Release|x64.Build.0 = Release|x64
+		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Release|x86.ActiveCfg = Release|Win32
+		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2213,6 +2223,7 @@ Global
 		{2B17530A-4A8D-4929-B837-B63AB28D2775} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{2097D5FD-77EE-412E-879D-50F7A085F63C} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{CF0940E1-C7CC-4B54-BF54-DB735CD60ED4} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
