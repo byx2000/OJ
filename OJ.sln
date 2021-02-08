@@ -411,6 +411,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最大连续1的个数III",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "删掉一个元素以后全为1的最长子数组", "LeetCode\删掉一个元素以后全为1的最长子数组\删掉一个元素以后全为1的最长子数组.vcxproj", "{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "长度最小的子数组", "LeetCode\长度最小的子数组\长度最小的子数组.vcxproj", "{5539A7D6-FA32-4BE0-9C10-9B12D6CE2D56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -2019,6 +2021,14 @@ Global
 		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Release|x64.Build.0 = Release|x64
 		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Release|x86.ActiveCfg = Release|Win32
 		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD}.Release|x86.Build.0 = Release|Win32
+		{5539A7D6-FA32-4BE0-9C10-9B12D6CE2D56}.Debug|x64.ActiveCfg = Debug|x64
+		{5539A7D6-FA32-4BE0-9C10-9B12D6CE2D56}.Debug|x64.Build.0 = Debug|x64
+		{5539A7D6-FA32-4BE0-9C10-9B12D6CE2D56}.Debug|x86.ActiveCfg = Debug|Win32
+		{5539A7D6-FA32-4BE0-9C10-9B12D6CE2D56}.Debug|x86.Build.0 = Debug|Win32
+		{5539A7D6-FA32-4BE0-9C10-9B12D6CE2D56}.Release|x64.ActiveCfg = Release|x64
+		{5539A7D6-FA32-4BE0-9C10-9B12D6CE2D56}.Release|x64.Build.0 = Release|x64
+		{5539A7D6-FA32-4BE0-9C10-9B12D6CE2D56}.Release|x86.ActiveCfg = Release|Win32
+		{5539A7D6-FA32-4BE0-9C10-9B12D6CE2D56}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2224,6 +2234,7 @@ Global
 		{2097D5FD-77EE-412E-879D-50F7A085F63C} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{CF0940E1-C7CC-4B54-BF54-DB735CD60ED4} = {315DA39E-D63B-4904-A597-0297D037F58E}
 		{092C4C12-9124-43DC-B5AB-3637CBD0E9FD} = {315DA39E-D63B-4904-A597-0297D037F58E}
+		{5539A7D6-FA32-4BE0-9C10-9B12D6CE2D56} = {315DA39E-D63B-4904-A597-0297D037F58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBB71DE1-4120-4BD4-85C6-996E6FBD904F}
