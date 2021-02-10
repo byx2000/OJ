@@ -47,7 +47,7 @@ public:
                 right++;
             }
 
-            if (right < (int)nums.size())
+            if (sum >= target)
                 minLen = min(minLen, right - left);
 
             while (sum >= target)
